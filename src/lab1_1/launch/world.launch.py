@@ -16,6 +16,7 @@ def generate_launch_description():
         get_package_share_directory(package_name), "worlds", world_file_name
     )
 
+
     # Check if the world file exists
     if not os.path.exists(world_file_path):
         raise FileNotFoundError(f"World file not found: {world_file_path}")

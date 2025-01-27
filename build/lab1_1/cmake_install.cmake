@@ -67,7 +67,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/lab1_1" TYPE PROGRAM FILES "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/dummy_script.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/lab1_1" TYPE PROGRAM FILES
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/dummy_script.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/bicycle_model.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -92,9 +95,12 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lab1_1" TYPE DIRECTORY FILES
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/models"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/meshes"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/worlds"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/launch"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/descriptions"
     )
 endif()
 

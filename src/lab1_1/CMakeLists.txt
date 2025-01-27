@@ -54,6 +54,7 @@ install(DIRECTORY
   worlds
   launch
   scripts
+  descriptions
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
