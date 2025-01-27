@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <robot name="robot">
+  <!-- Base Link -->
   <link name="base">
     <visual>
       <geometry>
-        <mesh filename="/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="Blue">
         <color rgba="0.0 0.5 0.8 1.0"/>
@@ -11,7 +12,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -20,4 +21,18 @@
       <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
   </link>
+
+  <!-- Additional Link -->
+  <link name="link1">
+
+  </link>
+
+  <!-- Joint between base and link1 -->
+  <joint name="base_to_link1" type="revolute">
+    <parent link="base"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+  </joint>
 </robot>

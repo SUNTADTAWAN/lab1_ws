@@ -37,12 +37,12 @@ install(PROGRAMS
 include_directories(include)
 
 # Create Cpp executable
-add_executable(cpp_node_test src/cpp_node.cpp)
-ament_target_dependencies(cpp_node_test rclcpp)
+add_executable(cpp_node src/cpp_node.cpp)
+ament_target_dependencies(cpp_node rclcpp)
 
 # Install Cpp executables
 install(TARGETS
-  cpp_node_test
+  cpp_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
