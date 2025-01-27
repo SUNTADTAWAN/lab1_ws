@@ -1,0 +1,7 @@
+setup.py
+lab1_1/__init__.py
+lab1_1/dummy_module.py
+lab1_1.egg-info/PKG-INFO
+lab1_1.egg-info/SOURCES.txt
+lab1_1.egg-info/dependency_links.txt
+lab1_1.egg-info/top_level.txt
