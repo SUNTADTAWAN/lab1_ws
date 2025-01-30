@@ -74,7 +74,7 @@ def generate_launch_description():
         arguments=[
             "-entity", "robot",
             "-file", robot_description_file,
-            "-x", "0", "-y", "0", "-z", "0"
+            "-x", "0", "-y", "0", "-z", "1"
         ],
         output="screen",
     )

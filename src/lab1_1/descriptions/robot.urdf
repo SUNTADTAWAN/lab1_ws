@@ -1,38 +1,128 @@
 <?xml version="1.0"?>
-<robot name="robot">
+<robot name="robot_with_ackermann">
+
+
+
   <!-- Base Link -->
   <link name="base">
     <visual>
       <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://lab1_1/meshes/limo_optimal.dae" scale="1 1 1"/>
       </geometry>
+      <origin xyz="0 0 0.0" rpy="0 0 1.57"/>
       <material name="Blue">
         <color rgba="0.0 0.5 0.8 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://lab1_1/meshes/limo_optimal.dae" scale="1 1 1"/>
       </geometry>
+      <origin xyz="0 0 0.0" rpy="0 0 1.57"/>
     </collision>
     <inertial>
-      <mass value="1.0"/>
+      <mass value="3.0"/>
       <origin xyz="0 0 0"/>
       <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
   </link>
 
-  <!-- Additional Link -->
-  <link name="link1">
-
+  <!-- ล้อหน้า ซ้าย -->
+  <link name="steer_front_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.001"/>
+      </geometry>
+      <origin xyz="0.1 0.065 0.045" rpy="0 0 3.14"/>
+      <material name="Gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>
+    </visual>
   </link>
-
-  <!-- Joint between base and link1 -->
-  <joint name="base_to_link1" type="revolute">
+  <joint name="steering_joint_front_left" type="revolute">
     <parent link="base"/>
-    <child link="link1"/>
-    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <child link="steer_front_left"/>
+    <origin xyz="0.1 0.065 0.045" rpy="0 0 3.14"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
+  <link name="wheel_front_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    
+  </link>
+  <joint name="rotation_joint_front_left" type="continuous">
+    <parent link="steer_front_left"/>
+    <child link="wheel_front_left"/>
+    <origin xyz="0 0 0" rpy="0 0 3.14"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ล้อหน้า ขวา -->
+  <link name="steer_front_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.001"/>
+      </geometry>
+      <origin xyz="0.1 -0.065 0.045" rpy="0 0 0"/>
+      <material name="Gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>
+    </visual>
+  </link> 
+  <joint name="steering_joint_front_right" type="revolute">
+    <parent link="base"/>
+    <child link="steer_front_right"/>
+    <origin xyz="0.1 -0.065 0.045" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
+  </joint>
+  <link name="wheel_front_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="rotation_joint_front_right" type="continuous">
+    <parent link="steer_front_right"/>
+    <child link="wheel_front_right"/>
+    <origin xyz="0 0 0" rpy="0 0 3.14"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ล้อหลัง ซ้าย -->
+  <link name="wheel_rear_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_wheel_rear_left" type="continuous">
+    <parent link="base"/>
+    <child link="wheel_rear_left"/>
+    <origin xyz="-0.1 0.065 0.045" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ล้อหลัง ขวา -->
+  <link name="wheel_rear_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_wheel_rear_right" type="continuous">
+    <parent link="base"/>
+    <child link="wheel_rear_right"/>
+    <origin xyz="-0.1 -0.065 0.045" rpy="0 0 3.14"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
 </robot>
+
