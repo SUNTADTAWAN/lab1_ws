@@ -72,7 +72,7 @@
         <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
-  </link>
+  </link> 
   <joint name="steering_joint_front_right" type="revolute">
     <parent link="base"/>
     <child link="steer_front_right"/>
