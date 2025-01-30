@@ -2,7 +2,7 @@
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/lab1_1_uninstall.dir
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/ament_cmake_python_copy_lab1_1.dir
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/ament_cmake_python_build_lab1_1_egg.dir
-/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/cpp_node_test.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/cpp_node.dir
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/test.dir
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/edit_cache.dir
 /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles/rebuild_cache.dir

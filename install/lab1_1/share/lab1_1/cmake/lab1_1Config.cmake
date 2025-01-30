@@ -16,7 +16,7 @@ set(_lab1_1_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT lab1_1_FIND_QUIETLY)
-  message(STATUS "Found lab1_1: 0.0.0 (${lab1_1_DIR})")
+  message(STATUS "Found lab1_1: 0.0.1 (${lab1_1_DIR})")
 endif()
 
 # warn when using a deprecated package

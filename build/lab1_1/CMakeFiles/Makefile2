@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1
 
 # The main recursive "all" target.
 all: CMakeFiles/ament_cmake_python_build_lab1_1_egg.dir/all
-all: CMakeFiles/cpp_node_test.dir/all
+all: CMakeFiles/cpp_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,7 +76,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/lab1_1_uninstall.dir/clean
 clean: CMakeFiles/ament_cmake_python_copy_lab1_1.dir/clean
 clean: CMakeFiles/ament_cmake_python_build_lab1_1_egg.dir/clean
-clean: CMakeFiles/cpp_node_test.dir/clean
+clean: CMakeFiles/cpp_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -184,30 +184,30 @@ CMakeFiles/ament_cmake_python_build_lab1_1_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_lab1_1_egg.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cpp_node_test.dir
+# Target rules for target CMakeFiles/cpp_node.dir
 
 # All Build rule for target.
-CMakeFiles/cpp_node_test.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node_test.dir/build.make CMakeFiles/cpp_node_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node_test.dir/build.make CMakeFiles/cpp_node_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles --progress-num=1,2 "Built target cpp_node_test"
-.PHONY : CMakeFiles/cpp_node_test.dir/all
+CMakeFiles/cpp_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles --progress-num=1,2 "Built target cpp_node"
+.PHONY : CMakeFiles/cpp_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cpp_node_test.dir/rule: cmake_check_build_system
+CMakeFiles/cpp_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp_node_test.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1/CMakeFiles 0
-.PHONY : CMakeFiles/cpp_node_test.dir/rule
+.PHONY : CMakeFiles/cpp_node.dir/rule
 
 # Convenience name for target.
-cpp_node_test: CMakeFiles/cpp_node_test.dir/rule
-.PHONY : cpp_node_test
+cpp_node: CMakeFiles/cpp_node.dir/rule
+.PHONY : cpp_node
 
 # clean rule for target.
-CMakeFiles/cpp_node_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node_test.dir/build.make CMakeFiles/cpp_node_test.dir/clean
-.PHONY : CMakeFiles/cpp_node_test.dir/clean
+CMakeFiles/cpp_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/clean
+.PHONY : CMakeFiles/cpp_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

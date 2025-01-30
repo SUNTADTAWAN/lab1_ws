@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <robot name="robot_with_ackermann">
 
+
+
   <!-- Base Link -->
   <link name="base">
     <visual>
@@ -36,11 +38,6 @@
         <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
   </link>
   <joint name="steering_joint_front_left" type="revolute">
     <parent link="base"/>
@@ -49,27 +46,14 @@
     <axis xyz="0 0 1"/>
     <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
-
   <link name="wheel_front_left">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
-      </geometry>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
+    
   </link>
-
-
   <joint name="rotation_joint_front_left" type="continuous">
     <parent link="steer_front_left"/>
     <child link="wheel_front_left"/>
@@ -88,11 +72,6 @@
         <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
   </link> 
   <joint name="steering_joint_front_right" type="revolute">
     <parent link="base"/>
@@ -101,26 +80,13 @@
     <axis xyz="0 0 1"/>
     <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
-
   <link name="wheel_front_right">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
-      </geometry>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
   </link>
-
   <joint name="rotation_joint_front_right" type="continuous">
     <parent link="steer_front_right"/>
     <child link="wheel_front_right"/>
@@ -135,17 +101,6 @@
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
-      </geometry>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
   </link>
   <joint name="joint_wheel_rear_left" type="continuous">
     <parent link="base"/>
@@ -161,18 +116,6 @@
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
-      </geometry>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-    </inertial>
-
   </link>
   <joint name="joint_wheel_rear_right" type="continuous">
     <parent link="base"/>
@@ -182,3 +125,4 @@
   </joint>
 
 </robot>
+

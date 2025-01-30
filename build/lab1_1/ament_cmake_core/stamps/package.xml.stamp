@@ -1,23 +1,40 @@
-<?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>lab1_1</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="teacher@todo.todo">teacher</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.0.1</version>
+  <description>Lab 1.1 Mobile Robot Kinematics</description>
+  <maintainer email="youremail@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <buildtool_depend>ament_cmake_python</buildtool_depend>
-  <buildtool_depend>rosidl_default_generators</buildtool_depend>
-  
-  <depend>rclcpp</depend>
-  <depend>rclpy</depend>
-  
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
 
-  <export>
+  <!-- Specific dependencies -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>ament_cmake_python</build_depend>
+  <build_depend>rclpy</build_depend>
+
+  <build_export_depend>rclcpp</build_export_depend>
+  <build_export_depend>ament_cmake_python</build_export_depend>
+  <build_export_depend>rclpy</build_export_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>ament_cmake_python</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+
+    <export>
+      <!-- Dependencies -->
+    <depend>launch</depend>
+    <depend>launch_ros</depend>
+    <depend>robot_state_publisher</depend>
+    <depend>rviz2</depend>
+    <depend>joint_state_publisher_gui</depend>
+    <depend>gazebo_ros</depend>
+    <depend>rclcpp</depend>
+    <depend>trajectory_msgs</depend>
+    <depend>gazebo_ros2_control</depend>
+    <exec_depend>xacro</exec_depend>
+    
     <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_model_path = "install/lab1_1/share"/>
+    <architecture_independent />
   </export>
 </package>
