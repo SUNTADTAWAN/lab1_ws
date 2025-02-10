@@ -1,9 +1,16 @@
-import os
+#!/usr/bin/env python3
+
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription
 from launch_ros.actions import Node
+import os
+from launch import LaunchDescription
+from launch.substitutions import LaunchConfiguration
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
+import xacro  
+from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription, TimerAction
 
 def generate_launch_description():
     # Define the package and file paths
@@ -19,7 +26,7 @@ def generate_launch_description():
         get_package_share_directory(package_name), "descriptions", "robot.urdf"
     )
     rviz_config_file = os.path.join(
-        "src","lab1_1", "rviz", "config_rviz.rviz"
+        "src", "lab1_1", "rviz", "config_rviz.rviz"
     )
 
     # Check if required files exist
@@ -38,7 +45,7 @@ def generate_launch_description():
         value=models_directory,
     )
 
-    # Include Gazebo with the specified world file
+    # Include Gazebo with the specified world file and GUI enabled
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -47,7 +54,7 @@ def generate_launch_description():
                 "gazebo.launch.py"
             )
         ),
-        launch_arguments={"world": world_file_path}.items(),
+        launch_arguments={"world": world_file_path, "gui": "true", "use_sim_time": "true"}.items(),
     )
 
     # Robot State Publisher Node
@@ -56,15 +63,8 @@ def generate_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="screen",
-        parameters=[{"robot_description": robot_description}]
-    )
-
-    # Joint State Publisher GUI Node
-    joint_state_publisher = Node(
-        package="joint_state_publisher_gui",
-        executable="joint_state_publisher_gui",
-        name="joint_state_publisher_gui",
-        output="screen",
+        parameters=[{"robot_description": robot_description, "use_sim_time": True}],
+        # remappings=[('/joint_states', '/joint_states')]
     )
 
     # Spawn the robot entity in Gazebo using a Node
@@ -74,7 +74,8 @@ def generate_launch_description():
         arguments=[
             "-entity", "robot",
             "-file", robot_description_file,
-            "-x", "0", "-y", "0", "-z", "1"
+            "-x", "0", "-y", "0", "-z", "0",
+            "-R", "0", "-P", "0", "-Y", "0"
         ],
         output="screen",
     )
@@ -85,15 +86,58 @@ def generate_launch_description():
         executable="rviz2",
         name="rviz2",
         output="screen",
-        arguments=["-d", rviz_config_file]
+        arguments=["-d", rviz_config_file],
+        # parameters=[{"use_sim_time": True}],
+    )
+
+    # Controller Manager (Ensures controllers are loaded)
+    controller_manager = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        output="screen",
+    )
+
+    # Joint State Broadcaster Spawner Node
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        output="screen",
+        parameters=[{"use_sim_time": True}],
+    )
+
+    # Robot Controller Spawner Node
+    robot_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["velocity_controllers", "--controller-manager", "/controller_manager"],
+        output="screen",
+        parameters=[{"use_sim_time": True}],
+    )
+
+    # Delay Spawner Nodes to Ensure Controller Manager is Ready
+    delay_controller_spawners = TimerAction(
+        period=5.0,  # Delay by 5 seconds
+        actions=[joint_state_broadcaster_spawner, robot_controller_spawner],
+    )
+    
+    odom_publisher_node = Node(
+    package="lab1_1",
+    executable="odom_publisher.py",
+    name="odom_publisher",
+    output="screen",
+    parameters=[{"use_sim_time": True}]
     )
 
     # Define and return the launch description
     return LaunchDescription([
         set_gazebo_model_path,
         gazebo,
-        robot_state_publisher,
-        joint_state_publisher,
         spawn_robot_node,
+        robot_state_publisher,
         rviz_node,
+        # controller_manager,
+        joint_state_broadcaster_spawner,
+        robot_controller_spawner,
+        # odom_publisher_node,
     ])
