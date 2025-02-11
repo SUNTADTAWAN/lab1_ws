@@ -128,6 +128,11 @@ def generate_launch_description():
     output="screen",
     parameters=[{"use_sim_time": True}]
     )
+    tf_static_publisher = Node(
+    package="tf2_ros",
+    executable="static_transform_publisher",
+    arguments=["0", "0", "0", "0", "0", "0", "odom", "base"],
+)
 
     # Define and return the launch description
     return LaunchDescription([
@@ -136,6 +141,7 @@ def generate_launch_description():
         spawn_robot_node,
         robot_state_publisher,
         rviz_node,
+        tf_static_publisher,  # Add this line
         # controller_manager,
         joint_state_broadcaster_spawner,
         robot_controller_spawner,
