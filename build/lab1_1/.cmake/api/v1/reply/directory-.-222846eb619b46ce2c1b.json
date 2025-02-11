@@ -101,19 +101,19 @@
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 44,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 9,
 				"file" : 3,
-				"line" : 60,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -352,7 +352,8 @@
 			"paths" : 
 			[
 				"scripts/dummy_script.py",
-				"scripts/bicycle_model.py"
+				"scripts/bicycle_model.py",
+				"scripts/inverse_kinematics.py"
 			],
 			"type" : "file"
 		},

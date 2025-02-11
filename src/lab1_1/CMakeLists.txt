@@ -29,6 +29,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/dummy_script.py
   scripts/bicycle_model.py
+  scripts/inverse_kinematics.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

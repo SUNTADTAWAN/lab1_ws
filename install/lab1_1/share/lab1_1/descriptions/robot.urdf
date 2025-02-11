@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <robot name="robot_with_ackermann">
 
+  <!-- CHASSIS LINK -->
 
-
-  <!-- Base Link -->
   <link name="base">
     <visual>
       <geometry>
@@ -27,17 +26,14 @@
     </inertial>
   </link>
 
-  <!-- ล้อหน้า ซ้าย -->
+
+  <!-- Steering Left -->
   <link name="steer_front_left">
-    <visual>
-      <geometry>
-        <cylinder radius="0.01" length="0.001"/>
-      </geometry>
-      <origin xyz="0.1 0.065 0.045" rpy="0 0 3.14"/>
-      <material name="Gray">
-        <color rgba="0.5 0.5 0.5 1"/>
-      </material>
-    </visual>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
   </link>
   <joint name="steering_joint_front_left" type="revolute">
     <parent link="base"/>
@@ -46,13 +42,24 @@
     <axis xyz="0 0 1"/>
     <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
+
+  <!-- Drive Wheel Front Left -->
   <link name="wheel_front_left">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
-    
+    <collision>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
   </link>
   <joint name="rotation_joint_front_left" type="continuous">
     <parent link="steer_front_left"/>
@@ -61,18 +68,14 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-  <!-- ล้อหน้า ขวา -->
+  <!-- Steering Right -->
   <link name="steer_front_right">
-    <visual>
-      <geometry>
-        <cylinder radius="0.01" length="0.001"/>
-      </geometry>
-      <origin xyz="0.1 -0.065 0.045" rpy="0 0 0"/>
-      <material name="Gray">
-        <color rgba="0.5 0.5 0.5 1"/>
-      </material>
-    </visual>
-  </link> 
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="steering_joint_front_right" type="revolute">
     <parent link="base"/>
     <child link="steer_front_right"/>
@@ -80,12 +83,24 @@
     <axis xyz="0 0 1"/>
     <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
+
+  <!-- Drive Wheel Front Right -->
   <link name="wheel_front_right">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
   </link>
   <joint name="rotation_joint_front_right" type="continuous">
     <parent link="steer_front_right"/>
@@ -94,13 +109,23 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-  <!-- ล้อหลัง ซ้าย -->
+  <!-- Rear Left Wheel -->
   <link name="wheel_rear_left">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
   </link>
   <joint name="joint_wheel_rear_left" type="continuous">
     <parent link="base"/>
@@ -109,13 +134,23 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-  <!-- ล้อหลัง ขวา -->
+  <!-- Rear Right Wheel -->
   <link name="wheel_rear_right">
     <visual>
       <geometry>
         <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
       </geometry>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://lab1_1/meshes/limo_optimal_wheels.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
   </link>
   <joint name="joint_wheel_rear_right" type="continuous">
     <parent link="base"/>
@@ -124,5 +159,84 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-</robot>
+  <!-- ROS2 Control and Gazebo Integration -->
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    
+    <joint name="steering_joint_front_left">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    
+    <joint name="steering_joint_front_right">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    
+    <joint name="rotation_joint_front_left">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
 
+    <joint name="rotation_joint_front_right">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="joint_wheel_rear_left">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="joint_wheel_rear_right">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+
+  <!-- Gazebo Plugin Configuration -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+      <parameters>src/lab1_1/config/controller.yaml</parameters>
+    </plugin>
+  
+    <plugin filename="libgazebo_ros_p3d.so" name="odom_publisher">
+      <frameName>odom</frameName>
+      <bodyName>base</bodyName>
+      <updateRate>50.0</updateRate>
+    </plugin>
+  </gazebo>
+
+  <!-- Gazebo Material and Friction Settings -->
+  <gazebo reference="wheel_front_left">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="wheel_front_right">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="wheel_rear_left">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="wheel_rear_right">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+</robot>
