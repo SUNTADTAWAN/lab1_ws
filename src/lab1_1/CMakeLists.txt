@@ -29,6 +29,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/dummy_script.py
   scripts/bicycle_model.py
+  scripts/odom_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -55,6 +56,7 @@ install(DIRECTORY
   launch
   scripts
   descriptions
+  config
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
