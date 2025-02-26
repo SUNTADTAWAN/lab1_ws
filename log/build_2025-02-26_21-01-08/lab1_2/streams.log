@@ -1,0 +1,59 @@
+[0.007s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.103s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.119s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.121s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.124s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.130s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.156s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.156s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.249s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.328s] -- Configuring done
+[0.333s] -- Generating done
+[0.336s] -- Build files have been written to: /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2
+[0.353s] [35m[1mConsolidate compiler generated dependencies of target cpp_node_test[0m
+[0.361s] [100%] Built target cpp_node_test
+[0.363s] [100%] Built target ament_cmake_python_copy_lab1_2
+[0.513s] running egg_info
+[0.513s] writing lab1_2.egg-info/PKG-INFO
+[0.513s] writing dependency_links to lab1_2.egg-info/dependency_links.txt
+[0.514s] writing top-level names to lab1_2.egg-info/top_level.txt
+[0.515s] reading manifest file 'lab1_2.egg-info/SOURCES.txt'
+[0.515s] writing manifest file 'lab1_2.egg-info/SOURCES.txt'
+[0.533s] [100%] Built target ament_cmake_python_build_lab1_2_egg
+[0.540s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
+[0.541s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2
+[0.546s] -- Install configuration: ""
+[0.546s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/pythonpath.sh
+[0.546s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/pythonpath.dsv
+[0.546s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info
+[0.546s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/top_level.txt
+[0.546s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.546s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.546s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/PKG-INFO
+[0.546s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2
+[0.546s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2/__init__.py
+[0.546s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2/dummy_module.py
+[0.567s] Listing '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2'...
+[0.569s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/dummy_script.py
+[0.569s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/pid.py
+[0.569s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/cpp_node_test
+[0.569s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/package_run_dependencies/lab1_2
+[0.570s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/parent_prefix_path/lab1_2
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/ament_prefix_path.sh
+[0.570s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/ament_prefix_path.dsv
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/path.sh
+[0.570s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/path.dsv
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.bash
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.sh
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.zsh
+[0.570s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.dsv
+[0.570s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/package.dsv
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/packages/lab1_2
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/cmake/lab1_2Config.cmake
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/cmake/lab1_2Config-version.cmake
+[0.570s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/package.xml
+[0.572s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2

@@ -68,10 +68,11 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/lab1_1" TYPE PROGRAM FILES
-    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/dummy_script.py"
-    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/bicycle_model.py"
-    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/inverse_kinematics.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/no_slip_model.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/basic_model.py"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/tf_publisher.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/yaw_rate.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/plot_odom.py"
     )
 endif()
 

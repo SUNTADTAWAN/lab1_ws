@@ -30,6 +30,8 @@ install(PROGRAMS
   scripts/no_slip_model.py
   scripts/basic_model.py
   scripts/tf_publisher.py
+  scripts/yaw_rate.py
+  scripts/plot_odom.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
