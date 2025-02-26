@@ -27,9 +27,9 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/dummy_script.py
-  scripts/bicycle_model.py
-  scripts/inverse_kinematics.py
+  scripts/no_slip_model.py
+  scripts/basic_model.py
+  scripts/tf_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

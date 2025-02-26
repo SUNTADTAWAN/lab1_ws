@@ -9,6 +9,7 @@
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/dummy_script.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/bicycle_model.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/inverse_kinematics.py
+/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/tf_publisher.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/cpp_node
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/model.config
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/blender/gase_bottle.blend
@@ -124,7 +125,7 @@
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/worlds/basic.world
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/world.launch.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/spawn_robot.launch.py
-/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/odom_publisher.py
+/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/tf_publisher.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/bicycle_model.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/dummy_script.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/inverse_kinematics.py

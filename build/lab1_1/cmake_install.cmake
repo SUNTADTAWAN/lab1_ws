@@ -71,6 +71,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/dummy_script.py"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/bicycle_model.py"
     "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/inverse_kinematics.py"
+    "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1/scripts/tf_publisher.py"
     )
 endif()
 

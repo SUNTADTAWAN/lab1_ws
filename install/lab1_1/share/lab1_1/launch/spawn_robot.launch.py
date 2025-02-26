@@ -8,9 +8,8 @@ from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.actions import Node
 import xacro  
-from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription, TimerAction
+from launch.actions import SetEnvironmentVariable, TimerAction
 
 def generate_launch_description():
     # Define the package and file paths
@@ -26,7 +25,7 @@ def generate_launch_description():
         get_package_share_directory(package_name), "descriptions", "robot.urdf"
     )
     rviz_config_file = os.path.join(
-        "src", "lab1_1", "rviz", "config_rviz.rviz"
+        get_package_share_directory(package_name), "rviz", "config_rviz.rviz"
     )
 
     # Check if required files exist
@@ -64,10 +63,9 @@ def generate_launch_description():
         name="robot_state_publisher",
         output="screen",
         parameters=[{"robot_description": robot_description, "use_sim_time": True}],
-        # remappings=[('/joint_states', '/joint_states')]
     )
 
-    # Spawn the robot entity in Gazebo using a Node
+    # Spawn the robot entity in Gazebo
     spawn_robot_node = Node(
         package="gazebo_ros",
         executable="spawn_entity.py",
@@ -87,17 +85,17 @@ def generate_launch_description():
         name="rviz2",
         output="screen",
         arguments=["-d", rviz_config_file],
-        # parameters=[{"use_sim_time": True}],
+        parameters=[{"use_sim_time": True}],
     )
 
-    # Controller Manager (Ensures controllers are loaded)
+    # Controller Manager
     controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
         output="screen",
     )
 
-    # Joint State Broadcaster Spawner Node
+    # Joint State Broadcaster Spawner
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -106,7 +104,7 @@ def generate_launch_description():
         parameters=[{"use_sim_time": True}],
     )
 
-    # Robot Controller Spawner Node
+    # Robot Controller Spawner
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -115,29 +113,49 @@ def generate_launch_description():
         parameters=[{"use_sim_time": True}],
     )
 
+    # Static TF publisher
+    static_tf = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        arguments=["0", "0", "0", "0", "0", "0", "world", "odom"],
+        output="screen"
+    )
+
+    # Odometry Publisher Node (Added Here)
+    odom_publisher = Node(
+        package="lab1_1",
+        executable="tf_publisher.py",
+        name="tf_publisher",
+        output="screen",
+        parameters=[{"use_sim_time": True}]
+    )
+
     # Delay Spawner Nodes to Ensure Controller Manager is Ready
     delay_controller_spawners = TimerAction(
         period=5.0,  # Delay by 5 seconds
         actions=[joint_state_broadcaster_spawner, robot_controller_spawner],
     )
-    
-    odom_publisher_node = Node(
-    package="lab1_1",
-    executable="odom_publisher.py",
-    name="odom_publisher",
+
+    joint_trajectory_position_controller_spawner = Node(
+    package="controller_manager",
+    executable="spawner",
+    arguments=["joint_trajectory_position_controller", "--controller-manager", "/controller_manager"],
     output="screen",
-    parameters=[{"use_sim_time": True}]
-    )
+    parameters=[{"use_sim_time": True}],
+)
+
 
     # Define and return the launch description
-    return LaunchDescription([
+    return LaunchDescription([   
         set_gazebo_model_path,
         gazebo,
         spawn_robot_node,
         robot_state_publisher,
         rviz_node,
-        # controller_manager,
+        controller_manager,
         joint_state_broadcaster_spawner,
         robot_controller_spawner,
-        # odom_publisher_node,
+        static_tf,
+        odom_publisher,  # <---- Added Odometry Publisher Here
+        joint_trajectory_position_controller_spawner
     ])

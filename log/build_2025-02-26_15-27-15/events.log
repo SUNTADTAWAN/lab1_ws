@@ -1,0 +1,360 @@
+[0.000000] (-) TimerEvent: {}
+[0.000140] (lab1_1) JobQueued: {'identifier': 'lab1_1', 'dependencies': OrderedDict()}
+[0.000521] (lab1_1) JobStarted: {'identifier': 'lab1_1'}
+[0.006097] (lab1_1) JobProgress: {'identifier': 'lab1_1', 'progress': 'cmake'}
+[0.006404] (lab1_1) Command: {'cmd': ['/usr/bin/cmake', '/home/tadtawan/mobile_robot/lab1_ws/src/lab1_1', '-DCMAKE_INSTALL_PREFIX=/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1'], 'cwd': '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tadtawan'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tadtawan'), ('OLDPWD', '/home/tadtawan/mobile_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('MANAGERPID', '1939'), ('SYSTEMD_EXEC_PID', '2352'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3378'), ('COLCON_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tadtawan'), ('JOURNAL_STREAM', '8:584'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tadtawan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tadtawan:@/tmp/.ICE-unix/2329,unix/tadtawan:/tmp/.ICE-unix/2329'), ('INVOCATION_ID', '025df2dc3d9440b78cf04b53d7ef6bfb'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:123bb5a9-52e0-4fa1-9be6-0d8b75a00a38'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble')]), 'shell': False}
+[0.099835] (-) TimerEvent: {}
+[0.200115] (-) TimerEvent: {}
+[0.300532] (-) TimerEvent: {}
+[0.400886] (-) TimerEvent: {}
+[0.501193] (-) TimerEvent: {}
+[0.531554] (lab1_1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601309] (-) TimerEvent: {}
+[0.701574] (-) TimerEvent: {}
+[0.801847] (-) TimerEvent: {}
+[0.902114] (-) TimerEvent: {}
+[0.922113] (lab1_1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.930402] (lab1_1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.002207] (-) TimerEvent: {}
+[1.003171] (lab1_1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.008108] (lab1_1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.009337] (lab1_1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.010003] (lab1_1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.012816] (lab1_1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.084803] (lab1_1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.089710] (lab1_1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.089886] (lab1_1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.090197] (lab1_1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.092657] (lab1_1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.102289] (-) TimerEvent: {}
+[1.195035] (lab1_1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.202376] (-) TimerEvent: {}
+[1.260248] (lab1_1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.289107] (lab1_1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.293003] (lab1_1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.298620] (lab1_1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.302441] (-) TimerEvent: {}
+[1.307398] (lab1_1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.318872] (lab1_1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.347756] (lab1_1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.349550] (lab1_1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402553] (-) TimerEvent: {}
+[1.407828] (lab1_1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.426841] (lab1_1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.455246] (lab1_1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.463262] (lab1_1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.502636] (-) TimerEvent: {}
+[1.529176] (lab1_1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.529560] (lab1_1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.584023] (lab1_1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.585093] (lab1_1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602728] (-) TimerEvent: {}
+[1.627777] (lab1_1) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.702819] (-) TimerEvent: {}
+[1.730691] (lab1_1) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.736340] (lab1_1) StdoutLine: {'line': b'-- Generating done\n'}
+[1.738882] (lab1_1) StdoutLine: {'line': b'-- Build files have been written to: /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1\n'}
+[1.746844] (lab1_1) CommandEnded: {'returncode': 0}
+[1.747358] (lab1_1) JobProgress: {'identifier': 'lab1_1', 'progress': 'build'}
+[1.747979] (lab1_1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1', '--', '-j16', '-l16'], 'cwd': '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tadtawan'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tadtawan'), ('OLDPWD', '/home/tadtawan/mobile_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('MANAGERPID', '1939'), ('SYSTEMD_EXEC_PID', '2352'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3378'), ('COLCON_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tadtawan'), ('JOURNAL_STREAM', '8:584'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tadtawan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tadtawan:@/tmp/.ICE-unix/2329,unix/tadtawan:/tmp/.ICE-unix/2329'), ('INVOCATION_ID', '025df2dc3d9440b78cf04b53d7ef6bfb'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:123bb5a9-52e0-4fa1-9be6-0d8b75a00a38'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble')]), 'shell': False}
+[1.782693] (lab1_1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o\x1b[0m\n'}
+[1.788266] (lab1_1) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_lab1_1\n'}
+[1.802910] (-) TimerEvent: {}
+[1.903146] (-) TimerEvent: {}
+[1.953181] (lab1_1) StdoutLine: {'line': b'running egg_info\n'}
+[1.953528] (lab1_1) StdoutLine: {'line': b'creating lab1_1.egg-info\n'}
+[1.953648] (lab1_1) StdoutLine: {'line': b'writing lab1_1.egg-info/PKG-INFO\n'}
+[1.953749] (lab1_1) StdoutLine: {'line': b'writing dependency_links to lab1_1.egg-info/dependency_links.txt\n'}
+[1.953829] (lab1_1) StdoutLine: {'line': b'writing top-level names to lab1_1.egg-info/top_level.txt\n'}
+[1.953960] (lab1_1) StdoutLine: {'line': b"writing manifest file 'lab1_1.egg-info/SOURCES.txt'\n"}
+[1.955549] (lab1_1) StdoutLine: {'line': b"reading manifest file 'lab1_1.egg-info/SOURCES.txt'\n"}
+[1.955905] (lab1_1) StdoutLine: {'line': b"writing manifest file 'lab1_1.egg-info/SOURCES.txt'\n"}
+[1.975770] (lab1_1) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_lab1_1_egg\n'}
+[2.003248] (-) TimerEvent: {}
+[2.103538] (-) TimerEvent: {}
+[2.178340] (lab1_1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[2.203663] (-) TimerEvent: {}
+[2.249897] (lab1_1) StdoutLine: {'line': b'[100%] Built target cpp_node\n'}
+[2.258463] (lab1_1) CommandEnded: {'returncode': 0}
+[2.258956] (lab1_1) JobProgress: {'identifier': 'lab1_1', 'progress': 'install'}
+[2.264781] (lab1_1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1'], 'cwd': '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tadtawan'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tadtawan'), ('OLDPWD', '/home/tadtawan/mobile_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('MANAGERPID', '1939'), ('SYSTEMD_EXEC_PID', '2352'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3378'), ('COLCON_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tadtawan'), ('JOURNAL_STREAM', '8:584'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tadtawan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tadtawan:@/tmp/.ICE-unix/2329,unix/tadtawan:/tmp/.ICE-unix/2329'), ('INVOCATION_ID', '025df2dc3d9440b78cf04b53d7ef6bfb'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:123bb5a9-52e0-4fa1-9be6-0d8b75a00a38'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1:/opt/ros/humble')]), 'shell': False}
+[2.270603] (lab1_1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.270716] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/pythonpath.sh\n'}
+[2.270784] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/pythonpath.dsv\n'}
+[2.270846] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info\n'}
+[2.270932] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[2.271018] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[2.271070] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[2.271124] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[2.271171] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1\n'}
+[2.271218] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py\n'}
+[2.271266] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py\n'}
+[2.294638] (lab1_1) StdoutLine: {'line': b"Listing '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1'...\n"}
+[2.294841] (lab1_1) StdoutLine: {'line': b"Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py'...\n"}
+[2.294886] (lab1_1) StdoutLine: {'line': b"Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py'...\n"}
+[2.298061] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/dummy_script.py\n'}
+[2.298171] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/bicycle_model.py\n'}
+[2.298236] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/inverse_kinematics.py\n'}
+[2.298288] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/odom_publisher.py\n'}
+[2.298387] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/cpp_node\n'}
+[2.298636] (lab1_1) StdoutLine: {'line': b'-- Set runtime path of "/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/cpp_node" to ""\n'}
+[2.298687] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models\n'}
+[2.298754] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle\n'}
+[2.298807] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/model.config\n'}
+[2.303641] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/blender\n'}
+[2.303727] (-) TimerEvent: {}
+[2.303799] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/blender/gase_bottle.blend\n'}
+[2.403841] (-) TimerEvent: {}
+[2.504097] (-) TimerEvent: {}
+[2.604330] (-) TimerEvent: {}
+[2.704584] (-) TimerEvent: {}
+[2.804876] (-) TimerEvent: {}
+[2.905134] (-) TimerEvent: {}
+[3.005470] (-) TimerEvent: {}
+[3.105811] (-) TimerEvent: {}
+[3.206144] (-) TimerEvent: {}
+[3.306373] (-) TimerEvent: {}
+[3.406657] (-) TimerEvent: {}
+[3.506938] (-) TimerEvent: {}
+[3.572536] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/model.sdf\n'}
+[3.572785] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes\n'}
+[3.572843] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle_fire_baseColor.png\n'}
+[3.607040] (-) TimerEvent: {}
+[3.707255] (-) TimerEvent: {}
+[3.716646] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle.dae\n'}
+[3.722811] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab\n'}
+[3.722910] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/model.config\n'}
+[3.723076] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/model.sdf\n'}
+[3.723338] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes\n'}
+[3.723389] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype_HD.png\n'}
+[3.725277] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2_HD.dae\n'}
+[3.725638] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2.dae\n'}
+[3.726008] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_lab.stl\n'}
+[3.726233] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype.png\n'}
+[3.726817] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane\n'}
+[3.726884] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/model.config\n'}
+[3.727121] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/model.sdf\n'}
+[3.727424] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes\n'}
+[3.727473] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane_v2.dae\n'}
+[3.727855] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/texture_07.png\n'}
+[3.728099] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane.dae\n'}
+[3.728525] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world\n'}
+[3.728578] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.config\n'}
+[3.728808] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1\n'}
+[3.728857] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.config\n'}
+[3.729122] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.sdf\n'}
+[3.729414] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin\n'}
+[3.729463] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc\n'}
+[3.729715] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc\n'}
+[3.729996] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc\n'}
+[3.730266] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt\n'}
+[3.730572] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls\n'}
+[3.730643] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.config\n'}
+[3.730861] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.sdf\n'}
+[3.731260] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles\n'}
+[3.731315] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.config\n'}
+[3.731560] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.sdf\n'}
+[3.731849] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box\n'}
+[3.731898] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.config\n'}
+[3.732162] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.sdf\n'}
+[3.732431] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.sdf\n'}
+[3.732702] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2\n'}
+[3.732749] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.config\n'}
+[3.733039] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.sdf\n'}
+[3.733293] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane\n'}
+[3.733344] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/model.config\n'}
+[3.733631] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials\n'}
+[3.733684] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/textures\n'}
+[3.733717] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/textures/sand.jpeg\n'}
+[3.740848] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/scripts\n'}
+[3.740970] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/scripts/plane.material\n'}
+[3.741152] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/model.sdf\n'}
+[3.741572] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym\n'}
+[3.741627] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/model.config\n'}
+[3.741936] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails\n'}
+[3.741998] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails/1.jpg\n'}
+[3.745449] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/model.sdf\n'}
+[3.745688] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/meshes\n'}
+[3.745761] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/meshes/my_robotics_gym.dae\n'}
+[3.750802] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube\n'}
+[3.750880] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube/model.config\n'}
+[3.751077] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube/model.sdf\n'}
+[3.751397] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office\n'}
+[3.751484] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/model.config\n'}
+[3.751682] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender\n'}
+[3.751731] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend1\n'}
+[3.807347] (-) TimerEvent: {}
+[3.907601] (-) TimerEvent: {}
+[4.007841] (-) TimerEvent: {}
+[4.108073] (-) TimerEvent: {}
+[4.203822] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kimbiniraw.blend\n'}
+[4.208148] (-) TimerEvent: {}
+[4.308381] (-) TimerEvent: {}
+[4.408615] (-) TimerEvent: {}
+[4.508846] (-) TimerEvent: {}
+[4.609099] (-) TimerEvent: {}
+[4.709347] (-) TimerEvent: {}
+[4.809645] (-) TimerEvent: {}
+[4.909977] (-) TimerEvent: {}
+[5.010490] (-) TimerEvent: {}
+[5.110981] (-) TimerEvent: {}
+[5.211464] (-) TimerEvent: {}
+[5.311791] (-) TimerEvent: {}
+[5.412201] (-) TimerEvent: {}
+[5.442806] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend\n'}
+[5.512309] (-) TimerEvent: {}
+[5.612607] (-) TimerEvent: {}
+[5.712939] (-) TimerEvent: {}
+[5.813209] (-) TimerEvent: {}
+[5.881861] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/model.sdf\n'}
+[5.882174] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes\n'}
+[5.882215] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/wood.005_baseColor.jpg\n'}
+[5.884611] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.002_baseColor.jpg\n'}
+[5.884946] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/office.dae\n'}
+[5.913303] (-) TimerEvent: {}
+[6.013565] (-) TimerEvent: {}
+[6.114041] (-) TimerEvent: {}
+[6.214409] (-) TimerEvent: {}
+[6.314651] (-) TimerEvent: {}
+[6.373087] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_3_baseColor.jpg\n'}
+[6.376812] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/floor.001_baseColor.jpg\n'}
+[6.381273] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Flowers_baseColor_scale1.jpg\n'}
+[6.381520] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/01_-_Default_baseColor.jpg\n'}
+[6.383186] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Fronds_baseColor.jpg\n'}
+[6.383442] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Office_Chair_baseColor.jpg\n'}
+[6.387860] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert_baseColor.jpg\n'}
+[6.414723] (-) TimerEvent: {}
+[6.434241] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_Pam_baseColor.jpg\n'}
+[6.445643] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/office.stl\n'}
+[6.514834] (-) TimerEvent: {}
+[6.615101] (-) TimerEvent: {}
+[6.715336] (-) TimerEvent: {}
+[6.726259] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.001_baseColor.jpg\n'}
+[6.727954] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_baseColor.jpg\n'}
+[6.729059] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/02_-_Default_baseColor.jpg\n'}
+[6.731176] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Material_27_baseColor.jpg\n'}
+[6.731810] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_2_baseColor.jpg\n'}
+[6.733097] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Coffee_baseColor.jpg\n'}
+[6.733661] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Projector_baseColor.jpg\n'}
+[6.734344] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table\n'}
+[6.734397] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table/model.config\n'}
+[6.734596] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table/model.sdf\n'}
+[6.734893] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house\n'}
+[6.734973] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.config\n'}
+[6.735272] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.sdf\n'}
+[6.740065] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world\n'}
+[6.740203] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.config\n'}
+[6.740440] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model-1_4.sdf\n'}
+[6.741173] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.sdf\n'}
+[6.741791] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes\n'}
+[6.741845] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.dae\n'}
+[6.742136] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.stl\n'}
+[6.742412] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.stl\n'}
+[6.742740] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.dae\n'}
+[6.743154] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit\n'}
+[6.743206] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/model.config\n'}
+[6.743502] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/model.sdf\n'}
+[6.743781] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes\n'}
+[6.743832] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.dae\n'}
+[6.750212] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.stl\n'}
+[6.753128] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit_texture.png\n'}
+[6.753423] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible\n'}
+[6.753478] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.config\n'}
+[6.753769] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_4.sdf\n'}
+[6.754088] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_2.sdf\n'}
+[6.754390] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_3.sdf\n'}
+[6.754684] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.sdf\n'}
+[6.754983] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room\n'}
+[6.755037] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.config\n'}
+[6.755316] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend1\n'}
+[6.783879] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.sdf\n'}
+[6.784119] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend\n'}
+[6.811313] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes\n'}
+[6.811476] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room_texture.png\n'}
+[6.811618] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/hexagon.dae\n'}
+[6.811928] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room.stl\n'}
+[6.813890] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/wall.dae\n'}
+[6.814315] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/turtleroom_v2.dae\n'}
+[6.815401] (-) TimerEvent: {}
+[6.818016] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes\n'}
+[6.818108] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_base.stl\n'}
+[6.915501] (-) TimerEvent: {}
+[7.015744] (-) TimerEvent: {}
+[7.115985] (-) TimerEvent: {}
+[7.216221] (-) TimerEvent: {}
+[7.316500] (-) TimerEvent: {}
+[7.416763] (-) TimerEvent: {}
+[7.516990] (-) TimerEvent: {}
+[7.617235] (-) TimerEvent: {}
+[7.717491] (-) TimerEvent: {}
+[7.766187] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_optimal_wheels.dae\n'}
+[7.779164] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/steering.dae\n'}
+[7.806833] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_wheel.dae\n'}
+[7.817574] (-) TimerEvent: {}
+[7.917853] (-) TimerEvent: {}
+[8.018097] (-) TimerEvent: {}
+[8.118333] (-) TimerEvent: {}
+[8.218529] (-) TimerEvent: {}
+[8.274595] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/sidescreentexture.png\n'}
+[8.281436] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_base.dae\n'}
+[8.318612] (-) TimerEvent: {}
+[8.418831] (-) TimerEvent: {}
+[8.519063] (-) TimerEvent: {}
+[8.619298] (-) TimerEvent: {}
+[8.719514] (-) TimerEvent: {}
+[8.819792] (-) TimerEvent: {}
+[8.919986] (-) TimerEvent: {}
+[9.020244] (-) TimerEvent: {}
+[9.120516] (-) TimerEvent: {}
+[9.220864] (-) TimerEvent: {}
+[9.321087] (-) TimerEvent: {}
+[9.421335] (-) TimerEvent: {}
+[9.521606] (-) TimerEvent: {}
+[9.621938] (-) TimerEvent: {}
+[9.722210] (-) TimerEvent: {}
+[9.822435] (-) TimerEvent: {}
+[9.922735] (-) TimerEvent: {}
+[10.022959] (-) TimerEvent: {}
+[10.123178] (-) TimerEvent: {}
+[10.196196] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/rotw2_rviz.png\n'}
+[10.223260] (-) TimerEvent: {}
+[10.232390] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/face.png\n'}
+[10.240074] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_texture.png\n'}
+[10.240336] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/arrow_texture.png\n'}
+[10.240639] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/lcd_screen_texture.png\n'}
+[10.244429] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/steering_texture.png\n'}
+[10.244666] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_wheel.stl\n'}
+[10.323362] (-) TimerEvent: {}
+[10.405796] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_optimal.dae\n'}
+[10.423440] (-) TimerEvent: {}
+[10.523670] (-) TimerEvent: {}
+[10.542704] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/worlds\n'}
+[10.542844] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/worlds/basic.world\n'}
+[10.543093] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch\n'}
+[10.543150] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/world.launch.py\n'}
+[10.543202] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/spawn_robot.launch.py\n'}
+[10.543257] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts\n'}
+[10.543291] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/odom_publisher.py\n'}
+[10.543345] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/bicycle_model.py\n'}
+[10.543379] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/dummy_script.py\n'}
+[10.543440] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/inverse_kinematics.py\n'}
+[10.543477] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/descriptions\n'}
+[10.543525] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/descriptions/robot.urdf\n'}
+[10.543628] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/package_run_dependencies/lab1_1\n'}
+[10.543740] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/parent_prefix_path/lab1_1\n'}
+[10.543809] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/ament_prefix_path.sh\n'}
+[10.543873] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/ament_prefix_path.dsv\n'}
+[10.543937] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/path.sh\n'}
+[10.543999] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/path.dsv\n'}
+[10.544057] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.bash\n'}
+[10.544119] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.sh\n'}
+[10.544180] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.zsh\n'}
+[10.544237] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.dsv\n'}
+[10.544293] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/package.dsv\n'}
+[10.544373] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/packages/lab1_1\n'}
+[10.544455] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/cmake/lab1_1Config.cmake\n'}
+[10.544505] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/cmake/lab1_1Config-version.cmake\n'}
+[10.544562] (lab1_1) StdoutLine: {'line': b'-- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/package.xml\n'}
+[10.546562] (lab1_1) CommandEnded: {'returncode': 0}
+[10.558141] (lab1_1) JobEnded: {'identifier': 'lab1_1', 'rc': 0}
+[10.558561] (-) EventReactorShutdown: {}

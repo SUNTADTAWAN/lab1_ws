@@ -210,33 +210,76 @@
       <parameters>src/lab1_1/config/controller.yaml</parameters>
     </plugin>
   
-    <plugin filename="libgazebo_ros_p3d.so" name="odom_publisher">
-      <frameName>odom</frameName>
-      <bodyName>base</bodyName>
-      <updateRate>50.0</updateRate>
+    <plugin name="ground_truth_plugin" filename="libgazebo_ros_p3d.so">
+        <ros>
+            <!-- The topic name where the position will be published -->
+            <remapping>odom:=/odometry/ground_truth</remapping>
+        </ros>
+        <frame_name>odom</frame_name>
+        <!-- Replace with your robot's main link -->
+        <body_name>base</body_name>
+        <!-- Update rate in Hz -->
+        <update_rate>100.0</update_rate>
     </plugin>
+
   </gazebo>
 
   <!-- Gazebo Material and Friction Settings -->
+  <gazebo reference="base">
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
+  </gazebo>
   <gazebo reference="wheel_front_left">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_front_right">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_rear_left">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_rear_right">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
+
+  <ros2_control name="MyRobotControl" type="system">
+    <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="wheel_front_left">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_front_right">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_rear_left">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_rear_right">
+        <command_interface name="velocity"/>
+    </joint>
+</ros2_control>
+
 
 </robot>
