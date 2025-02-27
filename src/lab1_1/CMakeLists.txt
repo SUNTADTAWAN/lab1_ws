@@ -33,14 +33,19 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/no_slip_model.py
-  scripts/basic_model.py
-  scripts/tf_publisher.py
-  scripts/yaw_rate.py
-  scripts/single_track.py
-  scripts/double_track.py
+  scripts/lab1_1_basic_model.py
+  scripts/lab1_1_double_track.py
+  scripts/lab1_1_no_slip_model.py
+  scripts/lab1_1_single_track.py
+  scripts/lab1_1_yaw_rate.py
+  scripts/lab1_2_pid.py
+  scripts/lab1_2_pure_pursuit.py
+  scripts/lab1_2_stanley.py
   scripts/path_trackling.py
   scripts/plot_path.py
+  scripts/tf_publisher.py
+
+
   DESTINATION lib/${PROJECT_NAME}
 )
 

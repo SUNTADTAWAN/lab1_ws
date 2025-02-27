@@ -280,9 +280,7 @@
 # if __name__ == '__main__':
 #     main()
 # ################################################################################################################################################
-##MPC
-#!/usr/bin/env python3
-#!/usr/bin/env python3
+##SL
 #!/usr/bin/env python3
 
 import rclpy
@@ -323,7 +321,7 @@ class StanleyController(Node):
 
         # Stanley Parameters
         self.stanley_k = 0.8         # 🔥 Increased gain for better turns
-        self.wheel_base = 0.35       # Distance between front and rear axles
+        self.wheel_base = 0.2       # Distance between front and rear axles
         self.min_speed = 0.2         # Minimum speed (m/s)
         self.max_speed = 1.2         # Maximum speed (m/s)
         self.forward_speed = 1.0     # Base speed
@@ -452,3 +450,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
