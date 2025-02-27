@@ -1,0 +1,246 @@
+[0.015s] Invoking command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/phet/lab1_mobile/lab1_ws/src/lab1_1 -DCMAKE_INSTALL_PREFIX=/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.110s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.310s] -- Detecting C compiler ABI info - done
+[0.315s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.315s] -- Detecting C compile features
+[0.316s] -- Detecting C compile features - done
+[0.318s] -- Detecting CXX compiler ABI info
+[0.393s] -- Detecting CXX compiler ABI info - done
+[0.397s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.398s] -- Detecting CXX compile features
+[0.398s] -- Detecting CXX compile features - done
+[0.404s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.556s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.684s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.755s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.766s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.779s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.795s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.818s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.885s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.892s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.005s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.035s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.082s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.099s] -- Looking for pthread.h
+[1.166s] -- Looking for pthread.h - found
+[1.166s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.236s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.237s] -- Found Threads: TRUE  
+[1.291s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[1.423s] -- Configuring done
+[1.431s] -- Generating done
+[1.434s] -- Build files have been written to: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1
+[1.443s] Invoked command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/phet/lab1_mobile/lab1_ws/src/lab1_1 -DCMAKE_INSTALL_PREFIX=/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1
+[1.444s] Invoking command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1 -- -j16 -l16
+[1.495s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o[0m
+[1.502s] [ 50%] Built target ament_cmake_python_copy_lab1_1
+[1.699s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[1.723s] running egg_info
+[1.723s] creating lab1_1.egg-info
+[1.723s] writing lab1_1.egg-info/PKG-INFO
+[1.723s] writing dependency_links to lab1_1.egg-info/dependency_links.txt
+[1.723s] writing top-level names to lab1_1.egg-info/top_level.txt
+[1.723s] writing manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.725s] reading manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.725s] writing manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.757s] [100%] Built target ament_cmake_python_build_lab1_1_egg
+[1.781s] [100%] Built target cpp_node
+[1.793s] Invoked command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1 -- -j16 -l16
+[1.802s] Invoking command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1
+[1.808s] -- Install configuration: ""
+[1.809s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/pythonpath.sh
+[1.809s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/pythonpath.dsv
+[1.809s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info
+[1.809s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.809s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.810s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/top_level.txt
+[1.810s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/PKG-INFO
+[1.810s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1
+[1.810s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py
+[1.810s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py
+[1.841s] Listing '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1'...
+[1.841s] Compiling '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py'...
+[1.841s] Compiling '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py'...
+[1.846s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/lib/lab1_1/no_slip_model.py
+[1.846s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/lib/lab1_1/basic_model.py
+[1.846s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/lib/lab1_1/tf_publisher.py
+[1.846s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/lib/lab1_1/cpp_node
+[1.847s] -- Set runtime path of "/home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/lib/lab1_1/cpp_node" to ""
+[1.847s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models
+[1.847s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle
+[1.847s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/model.sdf
+[1.847s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/meshes
+[1.847s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle_fire_baseColor.png
+[1.854s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle.dae
+[1.854s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/model.config
+[1.854s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/blender
+[1.854s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/gas_bottle/blender/gase_bottle.blend
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.sdf
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_3.sdf
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_2.sdf
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.config
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_4.sdf
+[1.888s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.sdf
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.stl
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.dae
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.dae
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.stl
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.config
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_world/model-1_4.sdf
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_house
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.sdf
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.config
+[1.889s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/model.sdf
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/meshes
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/meshes/texture_07.png
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane_v2.dae
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane.dae
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/test_plane/model.config
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.sdf
+[1.890s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend1
+[1.891s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes
+[1.891s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room_texture.png
+[1.891s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/turtleroom_v2.dae
+[1.892s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room.stl
+[1.892s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/hexagon.dae
+[1.892s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/wall.dae
+[1.892s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.config
+[1.892s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/model.sdf
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2.dae
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2_HD.dae
+[1.893s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype_HD.png
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype.png
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_lab.stl
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_lab/model.config
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/model.sdf
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/02_-_Default_baseColor.jpg
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Projector_baseColor.jpg
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Flowers_baseColor_scale1.jpg
+[1.894s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_2_baseColor.jpg
+[1.895s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/office.dae
+[1.911s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_baseColor.jpg
+[1.911s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.002_baseColor.jpg
+[1.911s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert_baseColor.jpg
+[1.911s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/floor.001_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_Pam_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Office_Chair_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/01_-_Default_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.001_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Material_27_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_3_baseColor.jpg
+[1.912s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/office.stl
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Coffee_baseColor.jpg
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/Fronds_baseColor.jpg
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/meshes/wood.005_baseColor.jpg
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/model.config
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/blender
+[1.920s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/blender/kimbiniraw.blend
+[1.969s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend
+[1.985s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend1
+[2.002s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_table
+[2.002s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_table/model.sdf
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/perception_table/model.config
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/model.sdf
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/meshes
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.dae
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.stl
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit_texture.png
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/circuit/model.config
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.sdf
+[2.003s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.config
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.sdf
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.config
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.sdf
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.config
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.sdf
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.sdf
+[2.004s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.config
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.config
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.sdf
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.config
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane
+[2.005s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/model.sdf
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/model.config
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/materials
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/materials/textures
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/materials/textures/sand.jpeg
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/materials/scripts
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/plane/materials/scripts/plane.material
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym
+[2.006s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/model.sdf
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/meshes
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/meshes/my_robotics_gym.dae
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails/1.jpg
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/robotics_gym/model.config
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/demo_cube
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/demo_cube/model.sdf
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/models/demo_cube/model.config
+[2.007s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes
+[2.008s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/sidescreentexture.png
+[2.008s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/arrow_texture.png
+[2.008s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_optimal_wheels.dae
+[2.008s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/rotw2_rviz.png
+[2.010s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/lcd_screen_texture.png
+[2.010s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_base.dae
+[2.055s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_base.stl
+[2.088s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_texture.png
+[2.088s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/face.png
+[2.089s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/steering.dae
+[2.090s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_wheel.stl
+[2.096s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_wheel.dae
+[2.105s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/steering_texture.png
+[2.106s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/meshes/limo_optimal.dae
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/worlds
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/worlds/basic.world
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/launch
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/launch/world.launch.py
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/launch/spawn_robot.launch.py
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/scripts
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/scripts/tf_publisher.py
+[2.111s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/scripts/no_slip_model.py
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/scripts/basic_model.py
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/scripts/yaw_rate.py
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/descriptions
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/descriptions/robot.urdf
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/ament_index/resource_index/package_run_dependencies/lab1_1
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/ament_index/resource_index/parent_prefix_path/lab1_1
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/ament_prefix_path.sh
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/ament_prefix_path.dsv
+[2.112s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/path.sh
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/environment/path.dsv
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/local_setup.bash
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/local_setup.sh
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/local_setup.zsh
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/local_setup.dsv
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/package.dsv
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/ament_index/resource_index/packages/lab1_1
+[2.113s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/cmake/lab1_1Config.cmake
+[2.114s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/cmake/lab1_1Config-version.cmake
+[2.114s] -- Installing: /home/phet/lab1_mobile/lab1_ws/src/lab1_1/install/lab1_1/share/lab1_1/package.xml
+[2.116s] Invoked command in '/home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/phet/install/examples_rclpy_minimal_action_server:/home/phet/install/examples_rclpy_minimal_action_client:/home/phet/install/examples_rclpy_guard_conditions:/home/phet/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/phet/lab1_mobile/lab1_ws/src/lab1_1/build/lab1_1

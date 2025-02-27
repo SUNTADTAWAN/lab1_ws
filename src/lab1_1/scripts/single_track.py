@@ -12,10 +12,17 @@ import tf_transformations
 
 class SingleTrack(Node):
     def __init__(self):
+<<<<<<< HEAD
         super().__init__('single_track_node')
 
         # Declare parameters
         self.declare_parameter('wheel_base', 0.35)     # Distance between front & rear axles
+=======
+        super().__init__('single_track')
+
+        # Declare parameters
+        self.declare_parameter('wheel_base', 0.2)     # Distance between front & rear axles
+>>>>>>> 42f94861bd9f8b15264d99aa16409916fab4b9f9
         self.declare_parameter('track_width', 0.2)    # Distance between left and right wheels
         self.declare_parameter('wheel_radius', 0.045) # Wheel radius
         self.declare_parameter('odom_frame_id', 'odom')
