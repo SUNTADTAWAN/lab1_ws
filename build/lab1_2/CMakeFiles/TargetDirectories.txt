@@ -1,0 +1,12 @@
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/uninstall.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/lab1_2_uninstall.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/ament_cmake_python_copy_lab1_2.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/ament_cmake_python_build_lab1_2_egg.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/cpp_node_test.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/test.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/edit_cache.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/rebuild_cache.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/list_install_components.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/install.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/install/local.dir
+/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2/CMakeFiles/install/strip.dir
