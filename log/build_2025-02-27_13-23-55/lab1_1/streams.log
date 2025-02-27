@@ -1,0 +1,249 @@
+[0.010s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake /home/tadtawan/mobile_robot/lab1_ws/src/lab1_1 -DCMAKE_INSTALL_PREFIX=/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.078s] -- The CXX compiler identification is GNU 11.4.0
+[0.083s] -- Detecting C compiler ABI info
+[0.129s] -- Detecting C compiler ABI info - done
+[0.133s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.133s] -- Detecting C compile features
+[0.133s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.184s] -- Detecting CXX compiler ABI info - done
+[0.189s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.189s] -- Detecting CXX compile features
+[0.189s] -- Detecting CXX compile features - done
+[0.191s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.291s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.355s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.385s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.389s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.395s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.446s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.449s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.503s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.520s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.546s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.558s] -- Looking for pthread.h
+[0.603s] -- Looking for pthread.h - found
+[0.603s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.652s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.653s] -- Found Threads: TRUE  
+[0.686s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.781s] -- Configuring done
+[0.786s] -- Generating done
+[0.789s] -- Build files have been written to: /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1
+[0.797s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake /home/tadtawan/mobile_robot/lab1_ws/src/lab1_1 -DCMAKE_INSTALL_PREFIX=/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1
+[0.798s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1 -- -j16 -l16
+[0.825s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o[0m
+[0.829s] [ 50%] Built target ament_cmake_python_copy_lab1_1
+[1.000s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[1.001s] running egg_info
+[1.001s] creating lab1_1.egg-info
+[1.001s] writing lab1_1.egg-info/PKG-INFO
+[1.002s] writing dependency_links to lab1_1.egg-info/dependency_links.txt
+[1.002s] writing top-level names to lab1_1.egg-info/top_level.txt
+[1.002s] writing manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.003s] reading manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.004s] writing manifest file 'lab1_1.egg-info/SOURCES.txt'
+[1.023s] [100%] Built target ament_cmake_python_build_lab1_1_egg
+[1.062s] [100%] Built target cpp_node
+[1.069s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1 -- -j16 -l16
+[1.074s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1
+[1.078s] -- Install configuration: ""
+[1.078s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/pythonpath.sh
+[1.078s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/pythonpath.dsv
+[1.078s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info
+[1.078s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/top_level.txt
+[1.078s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.079s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.079s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1-0.0.1-py3.10.egg-info/PKG-INFO
+[1.079s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1
+[1.079s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py
+[1.079s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py
+[1.102s] Listing '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1'...
+[1.102s] Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/__init__.py'...
+[1.102s] Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/local/lib/python3.10/dist-packages/lab1_1/dummy_module.py'...
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/no_slip_model.py
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/basic_model.py
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/tf_publisher.py
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/yaw_rate.py
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/plot_odom.py
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/cpp_node
+[1.105s] -- Set runtime path of "/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/lib/lab1_1/cpp_node" to ""
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle
+[1.105s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/model.config
+[1.106s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/blender
+[1.106s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/blender/gase_bottle.blend
+[1.124s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/model.sdf
+[1.124s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes
+[1.124s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle_fire_baseColor.png
+[1.127s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/gas_bottle/meshes/gas_bottle.dae
+[1.127s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/model.config
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/model.sdf
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype_HD.png
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2_HD.dae
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_plane_v2.dae
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/perception_lab.stl
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_lab/meshes/prototype.png
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/model.config
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/model.sdf
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane_v2.dae
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/texture_07.png
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/test_plane/meshes/test_plane.dae
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.config
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.config
+[1.128s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle1/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.config
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/inner_walls/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.config
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacles/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.config
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/goal_box/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.config
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_dqn_world/obstacle2/model.sdf
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/model.config
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/textures
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/textures/sand.jpeg
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/scripts
+[1.129s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/materials/scripts/plane.material
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/plane/model.sdf
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/model.config
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/thumbnails/1.jpg
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/model.sdf
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/meshes
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/robotics_gym/meshes/my_robotics_gym.dae
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube/model.config
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/demo_cube/model.sdf
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/model.config
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender
+[1.130s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend1
+[1.140s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kimbiniraw.blend
+[1.165s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/blender/kombini1.blend
+[1.174s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/model.sdf
+[1.174s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes
+[1.174s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/wood.005_baseColor.jpg
+[1.174s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.002_baseColor.jpg
+[1.174s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/office.dae
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_3_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/floor.001_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Flowers_baseColor_scale1.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/01_-_Default_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Fronds_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Office_Chair_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_Pam_baseColor.jpg
+[1.182s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/office.stl
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_cert.001_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/02_-_Default_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Material_27_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Poster_office_2_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Coffee_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/office/meshes/Projector_baseColor.jpg
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table/model.config
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/perception_table/model.sdf
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.config
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_house/model.sdf
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.config
+[1.186s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model-1_4.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/model.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.dae
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.stl
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/hexagon.stl
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_world/meshes/wall.dae
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/model.config
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/model.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.dae
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit.stl
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/circuit/meshes/circuit_texture.png
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.config
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_4.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_2.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model-1_3.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/ground_plane_invisible/model.sdf
+[1.187s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.config
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend1
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/model.sdf
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/troom.blend
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes
+[1.188s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room_texture.png
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/hexagon.dae
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/room.stl
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/wall.dae
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/models/turtlebot3_room/meshes/turtleroom_v2.dae
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes
+[1.189s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_base.stl
+[1.206s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_optimal_wheels.dae
+[1.206s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/steering.dae
+[1.207s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_wheel.dae
+[1.212s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/sidescreentexture.png
+[1.212s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_base.dae
+[1.236s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/rotw2_rviz.png
+[1.236s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/face.png
+[1.236s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_texture.png
+[1.236s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/arrow_texture.png
+[1.236s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/lcd_screen_texture.png
+[1.237s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/steering_texture.png
+[1.237s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_wheel.stl
+[1.240s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/meshes/limo_optimal.dae
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/worlds
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/worlds/basic.world
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/world.launch.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/spawn_robot.launch.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/tf_publisher.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/no_slip_model.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/basic_model.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/plot_odom.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/yaw_rate.py
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/descriptions
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/descriptions/robot.urdf
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/package_run_dependencies/lab1_1
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/parent_prefix_path/lab1_1
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/ament_prefix_path.sh
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/ament_prefix_path.dsv
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/path.sh
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/environment/path.dsv
+[1.243s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.bash
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.sh
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.zsh
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/local_setup.dsv
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/package.dsv
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/ament_index/resource_index/packages/lab1_1
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/cmake/lab1_1Config.cmake
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/cmake/lab1_1Config-version.cmake
+[1.244s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/package.xml
+[1.246s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_1

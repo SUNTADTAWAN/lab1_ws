@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fd39bf752968f3c70527.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lab1_3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_lab1_3_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_lab1_3_egg-e1037df5a6b461e1e3d3.json",
+					"name" : "ament_cmake_python_build_lab1_3_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_lab1_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_lab1_3-4e3c3a95aca3922c5fd7.json",
+					"name" : "ament_cmake_python_copy_lab1_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_node_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_node_test-2d0210becaff19d64968.json",
+					"name" : "cpp_node_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab1_3_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab1_3_uninstall-791373f338a683589a6f.json",
+					"name" : "lab1_3_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9cf4476741a0a786454b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3",
+		"source" : "/home/tadtawan/mobile_robot/lab1_ws/src/lab1_3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

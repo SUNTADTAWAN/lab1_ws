@@ -128,6 +128,7 @@
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/launch/spawn_robot.launch.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/tf_publisher.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/no_slip_model.py
+/home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/single_track.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/basic_model.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/plot_odom.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_1/share/lab1_1/scripts/yaw_rate.py

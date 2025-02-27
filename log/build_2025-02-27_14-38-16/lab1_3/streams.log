@@ -1,0 +1,86 @@
+[0.011s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake /home/tadtawan/mobile_robot/lab1_ws/src/lab1_3 -DCMAKE_INSTALL_PREFIX=/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.115s] -- Detecting C compiler ABI info
+[0.180s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.188s] -- Detecting C compile features
+[0.189s] -- Detecting C compile features - done
+[0.192s] -- Detecting CXX compiler ABI info
+[0.303s] -- Detecting CXX compiler ABI info - done
+[0.312s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.312s] -- Detecting CXX compile features
+[0.313s] -- Detecting CXX compile features - done
+[0.317s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.532s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.670s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.734s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.744s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.756s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.772s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.794s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.853s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.858s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.966s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.006s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.058s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.070s] -- Looking for pthread.h
+[1.160s] -- Looking for pthread.h - found
+[1.161s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.253s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.254s] -- Found Threads: TRUE  
+[1.327s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[1.541s] -- Configuring done
+[1.551s] -- Generating done
+[1.556s] -- Build files have been written to: /home/tadtawan/mobile_robot/lab1_ws/build/lab1_3
+[1.570s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake /home/tadtawan/mobile_robot/lab1_ws/src/lab1_3 -DCMAKE_INSTALL_PREFIX=/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3
+[1.573s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_3 -- -j16 -l16
+[1.636s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node_test.dir/src/cpp_node.cpp.o[0m
+[1.646s] [ 50%] Built target ament_cmake_python_copy_lab1_3
+[1.934s] [100%] [32m[1mLinking CXX executable cpp_node_test[0m
+[1.936s] running egg_info
+[1.937s] creating lab1_3.egg-info
+[1.937s] writing lab1_3.egg-info/PKG-INFO
+[1.937s] writing dependency_links to lab1_3.egg-info/dependency_links.txt
+[1.937s] writing top-level names to lab1_3.egg-info/top_level.txt
+[1.937s] writing manifest file 'lab1_3.egg-info/SOURCES.txt'
+[1.940s] reading manifest file 'lab1_3.egg-info/SOURCES.txt'
+[1.940s] writing manifest file 'lab1_3.egg-info/SOURCES.txt'
+[1.975s] [100%] Built target ament_cmake_python_build_lab1_3_egg
+[2.036s] [100%] Built target cpp_node_test
+[2.049s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_3 -- -j16 -l16
+[2.059s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_3
+[2.067s] -- Install configuration: ""
+[2.067s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/pythonpath.sh
+[2.067s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/pythonpath.dsv
+[2.067s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3-0.0.0-py3.10.egg-info
+[2.067s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3-0.0.0-py3.10.egg-info/top_level.txt
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3-0.0.0-py3.10.egg-info/PKG-INFO
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3/__init__.py
+[2.068s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3/dummy_module.py
+[2.106s] Listing '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3'...
+[2.106s] Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3/__init__.py'...
+[2.106s] Compiling '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/local/lib/python3.10/dist-packages/lab1_3/dummy_module.py'...
+[2.111s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/lib/lab1_3/dummy_script.py
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/lib/lab1_3/cpp_node_test
+[2.112s] -- Set runtime path of "/home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/lib/lab1_3/cpp_node_test" to ""
+[2.112s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/ament_index/resource_index/package_run_dependencies/lab1_3
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/ament_index/resource_index/parent_prefix_path/lab1_3
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/ament_prefix_path.sh
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/ament_prefix_path.dsv
+[2.112s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/path.sh
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/environment/path.dsv
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/local_setup.bash
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/local_setup.sh
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/local_setup.zsh
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/local_setup.dsv
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/package.dsv
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/ament_index/resource_index/packages/lab1_3
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/cmake/lab1_3Config.cmake
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/cmake/lab1_3Config-version.cmake
+[2.113s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_3/share/lab1_3/package.xml
+[2.116s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_3

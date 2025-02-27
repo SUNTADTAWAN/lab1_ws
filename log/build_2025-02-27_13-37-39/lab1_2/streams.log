@@ -1,0 +1,46 @@
+[0.008s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
+[0.038s] [100%] Built target cpp_node_test
+[0.041s] [100%] Built target ament_cmake_python_copy_lab1_2
+[0.196s] running egg_info
+[0.197s] writing lab1_2.egg-info/PKG-INFO
+[0.199s] writing dependency_links to lab1_2.egg-info/dependency_links.txt
+[0.199s] writing top-level names to lab1_2.egg-info/top_level.txt
+[0.200s] reading manifest file 'lab1_2.egg-info/SOURCES.txt'
+[0.200s] writing manifest file 'lab1_2.egg-info/SOURCES.txt'
+[0.217s] [100%] Built target ament_cmake_python_build_lab1_2_egg
+[0.229s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
+[0.229s] Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2
+[0.234s] -- Install configuration: ""
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/pythonpath.sh
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/pythonpath.dsv
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info
+[0.234s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/top_level.txt
+[0.234s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.234s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.234s] -- Installing: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2-0.0.0-py3.10.egg-info/PKG-INFO
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2/__init__.py
+[0.234s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2/dummy_module.py
+[0.257s] Listing '/home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/local/lib/python3.10/dist-packages/lab1_2'...
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/dummy_script.py
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/pid.py
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/pure_pursuit.py
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/cpp_node_test
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/config
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/config/path.yaml
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/package_run_dependencies/lab1_2
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/parent_prefix_path/lab1_2
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/ament_prefix_path.sh
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/ament_prefix_path.dsv
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/path.sh
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/path.dsv
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.bash
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.sh
+[0.266s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.zsh
+[0.267s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/local_setup.dsv
+[0.267s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/package.dsv
+[0.268s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/packages/lab1_2
+[0.268s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/cmake/lab1_2Config.cmake
+[0.268s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/cmake/lab1_2Config-version.cmake
+[0.268s] -- Up-to-date: /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/package.xml
+[0.278s] Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tadtawan/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/fra532_lecture5_ws/install/mir_restapi:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_driver:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/twist_stamper:/home/tadtawan/mobile_robot/fra532_lecture5_ws/install/mir_restapi:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2

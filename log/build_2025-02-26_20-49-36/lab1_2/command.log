@@ -1,4 +1,0 @@
-Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
-Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2 -- -j16 -l16
-Invoking command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2
-Invoked command in '/home/tadtawan/mobile_robot/lab1_ws/build/lab1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tadtawan/mobile_robot/lab1_ws/build/lab1_2

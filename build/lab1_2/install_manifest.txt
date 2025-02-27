@@ -10,6 +10,7 @@
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/pid.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/pure_pursuit.py
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/lib/lab1_2/cpp_node_test
+/home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/config/path.yaml
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/package_run_dependencies/lab1_2
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/ament_index/resource_index/parent_prefix_path/lab1_2
 /home/tadtawan/mobile_robot/lab1_ws/install/lab1_2/share/lab1_2/environment/ament_prefix_path.sh

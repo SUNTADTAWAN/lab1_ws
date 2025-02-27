@@ -56,7 +56,7 @@ class NoSlipModel(Node):
         right_wheel_velocity = linear_velocity / self.wheel_radius
 
         # Publish steering angles and wheel velocities
-        self.publish_commands(left_wheel_velocity, -right_wheel_velocity, left_wheel_velocity, -right_wheel_velocity, -steer_left, -steer_right)
+        self.publish_commands(left_wheel_velocity, -right_wheel_velocity, left_wheel_velocity, -right_wheel_velocity, steer_left, steer_right)
 
         self.get_logger().info(
             f"Cmd Vel -> Linear: {linear_velocity:.2f} m/s, Angular: {angular_velocity:.2f} rad/s"
@@ -66,7 +66,68 @@ class NoSlipModel(Node):
         )
         self.get_logger().info(
             f"Wheel Velocities -> Left: {left_wheel_velocity:.2f} rad/s, Right: {right_wheel_velocity:.2f} rad/s"
-        )
+         )
+
+
+    # def cmd_vel_callback(self, msg):
+    #     linear_velocity  = msg.linear.x    # v (m/s) อ้างอิงกึ่งกลางเพลาหลัง
+    #     angular_velocity = msg.angular.z   # w (rad/s)
+
+    #     # ถ้าไม่มีคำสั่งวิ่งหรือเลี้ยว ก็หยุดล้อไป
+    #     if abs(linear_velocity) < 1e-6 and abs(angular_velocity) < 1e-6:
+    #         self.publish_commands(0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+    #         return
+
+    #     # Wheel base (L) และ Track width (T) ที่ได้จาก parameter
+    #     L = self.wheel_base
+    #     T = self.track_width
+    #     r = self.wheel_radius
+
+    #     if abs(angular_velocity) < 1e-6:
+    #         # วิ่งตรง ไม่เลี้ยว
+    #         steer_left = 0.0
+    #         steer_right = 0.0
+    #         # ความเร็วล้อทุกล้อเท่ากัน
+    #         w_rf = w_rr = linear_velocity / r
+    #         w_lr = w_lf = linear_velocity / r
+
+    #     else:
+    #         # มีการเลี้ยว
+    #         R = linear_velocity / angular_velocity  # รัศมีจากกึ่งกลางเพลาหลังไปยัง ICC (ซ้ายหรือขวาขึ้นอยู่กับ sign)
+
+    #         # คำนวณระยะจาก ICC ไปยังล้อแต่ละข้าง
+    #         R_lr = R - (T/2.0)   # ล้อหลังซ้าย
+    #         R_rr = R + (T/2.0)   # ล้อหลังขวา
+    #         # ล้อหน้าซ้าย
+    #         R_lf = math.sqrt(R_lr**2 + L**2)
+    #         # ล้อหน้าขวา
+    #         R_rf = math.sqrt(R_rr**2 + L**2)
+
+    #         # คำนวณความเร็วเชิงเส้นของล้อแต่ละข้าง (สมมติ linear_velocity คือความเร็วของจุดที่ R ห่างจาก ICC)
+    #         # ถ้า R<0 แปลว่าเลี้ยวอีกข้าง อาจต้องระวังเรื่องเครื่องหมาย แต่โดยทั่วไป v * (ระยะล้อ / R) ก็เพียงพอ
+    #         v_lf = linear_velocity * (R_lf / abs(R))
+    #         v_rf = linear_velocity * (R_rf / abs(R))
+    #         v_lr = linear_velocity * (abs(R_lr) / abs(R))
+    #         v_rr = linear_velocity * (abs(R_rr) / abs(R))
+
+    #         # แปลงเป็นความเร็วเชิงมุม (rad/s)
+    #         w_lf = v_lf / r
+    #         w_rf = v_rf / r
+    #         w_lr = v_lr / r
+    #         w_rr = v_rr / r
+
+    #         # มุมบังคับเลี้ยวล้อหน้า (ซ้าย/ขวา)
+    #         steer_left  = math.atan2(L, R_lr) if abs(R_lr) > 1e-6 else 0.0
+    #         steer_right = math.atan2(L, R_rr) if abs(R_rr) > 1e-6 else 0.0
+
+    #     # หมายเหตุ: ถ้าต้องกลับด้านหรือคูณ -1 ฝั่งขวา ก็ปรับตาม joint direction
+    #     # เช่น ถ้า joint ขวาหมุนกลับทิศ
+
+    #     # ส่งออกไป publish
+    #     self.publish_commands(
+    #         w_lf, -w_rf, w_lr, -w_rr,
+    #         steer_left, steer_right
+    #     )
 
     def publish_commands(self, left_front, right_front, left_rear, right_rear, steer_left, steer_right):
         """
