@@ -20,6 +20,12 @@ find_package(ament_cmake REQUIRED)		# cpp (optional)
 find_package(rclcpp REQUIRED)			# cpp (optional)
 find_package(ament_cmake_python REQUIRED)   	# python (optional)
 find_package(rclpy REQUIRED)                	# python (optional)
+find_package(rclpy REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+
 ######################################################
 
 # Install Python Module
@@ -27,9 +33,14 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/dummy_script.py
-  scripts/bicycle_model.py
-  scripts/odom_publisher.py
+  scripts/no_slip_model.py
+  scripts/basic_model.py
+  scripts/tf_publisher.py
+  scripts/yaw_rate.py
+  scripts/single_track.py
+  scripts/double_track.py
+  scripts/path_trackling.py
+  scripts/plot_path.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -53,10 +64,11 @@ install(DIRECTORY
   models
   meshes
   worlds
+  config
   launch
   scripts
+  rviz
   descriptions
-  config
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

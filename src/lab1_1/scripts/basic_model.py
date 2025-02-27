@@ -13,7 +13,7 @@ class BasicModel(Node):
 
         # Declare and get parameters
         self.declare_parameter('wheel_radius', 0.045)  # Wheel radius (m)
-        self.declare_parameter('wheel_base', 0.35)  # Distance between front and rear axles (m)
+        self.declare_parameter('wheel_base', 0.2)  # Distance between front and rear axles (m)
         self.declare_parameter('track_width', 0.2)  # Distance between left and right wheels (m)
 
         self.wheel_radius = self.get_parameter('wheel_radius').value
@@ -67,7 +67,7 @@ class BasicModel(Node):
         """
         # Publish equal steering angles to joint_trajectory_position_controller
         steering_msg = Float64MultiArray()
-        steering_msg.data = [-steer_angle, -steer_angle]
+        steering_msg.data = [steer_angle, steer_angle]
         self.pub_steering_angle.publish(steering_msg)
 
         # Publish wheel velocities to velocity_controllers

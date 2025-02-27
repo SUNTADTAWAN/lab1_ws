@@ -1,12 +1,12 @@
 controller_manager:
   ros__parameters:
-    update_rate: 50 # Hz
+    update_rate: 100  # Hz
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
     joint_trajectory_position_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+      type: position_controllers/JointGroupPositionController
     
     velocity_controllers:
       type: velocity_controllers/JointGroupVelocityController
@@ -18,20 +18,11 @@ velocity_controllers:
       - rotation_joint_front_right
       - joint_wheel_rear_left
       - joint_wheel_rear_right
-      - steering_joint_front_left
-      - steering_joint_front_right
     command_interface: 
       - velocity
     state_interface: 
       - velocity
       - position
-
-forward_position_controller:
-  ros__parameters:
-    joints:
-      - steering_joint_front_left
-      - steering_joint_front_right
-    interface_name: position
 
 joint_trajectory_position_controller:
   ros__parameters:
@@ -47,32 +38,7 @@ joint_trajectory_position_controller:
     action_monitor_rate: 20.0
     allow_partial_joints_goal: false
     open_loop_control: true
+    allow_integration_in_goal_trajectories: true
     constraints:
       stopped_velocity_tolerance: 0.01
       goal_time: 0.0
-
-steering_controller:
-  ros__parameters:
-    joints:
-      - steering_joint_front_left
-      - steering_joint_front_right
-    command_interface: 
-      - position
-    state_interface:
-      - position
-      - velocity
-
-wheel_controller:
-  ros__parameters:
-    joints:
-      - rotation_joint_front_left
-      - rotation_joint_front_right
-      - joint_wheel_rear_left
-      - joint_wheel_rear_right
-      - steering_joint_front_left
-      - steering_joint_front_right
-    command_interface: 
-      - velocity
-    state_interface:
-      - position
-      - velocity

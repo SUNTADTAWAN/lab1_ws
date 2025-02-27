@@ -40,7 +40,7 @@
     <child link="steer_front_left"/>
     <origin xyz="0.1 0.065 0.045" rpy="0 0 3.14"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="8.0"/>
+    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
 
   <!-- Drive Wheel Front Left -->
@@ -81,7 +81,7 @@
     <child link="steer_front_right"/>
     <origin xyz="0.1 -0.065 0.045" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="8.0"/>
+    <limit lower="-0.5" upper="0.5" effort="10.0" velocity="1.0"/>
   </joint>
 
   <!-- Drive Wheel Front Right -->
@@ -166,13 +166,13 @@
     </hardware>
     
     <joint name="steering_joint_front_left">
-      <command_interface name="velocity"/>
+      <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
     
     <joint name="steering_joint_front_right">
-      <command_interface name="velocity"/>
+      <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
@@ -210,33 +210,76 @@
       <parameters>src/lab1_1/config/controller.yaml</parameters>
     </plugin>
   
-    <!-- <plugin filename="libgazebo_ros_p3d.so" name="odom_publisher">
-      <frameName>odom</frameName>
-      <bodyName>base</bodyName>
-      <updateRate>50.0</updateRate>
-    </plugin> -->
+    <plugin name="ground_truth_plugin" filename="libgazebo_ros_p3d.so">
+        <ros>
+            <!-- The topic name where the position will be published -->
+            <remapping>odom:=/odometry/ground_truth</remapping>
+        </ros>
+        <frame_name>odom</frame_name>
+        <!-- Replace with your robot's main link -->
+        <body_name>base</body_name>
+        <!-- Update rate in Hz -->
+        <update_rate>100.0</update_rate>
+    </plugin>
+
   </gazebo>
 
   <!-- Gazebo Material and Friction Settings -->
+  <gazebo reference="base">
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
+  </gazebo>
   <gazebo reference="wheel_front_left">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_front_right">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_rear_left">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="wheel_rear_right">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <minDepth>0.0002</minDepth>
+    <kp  value="1000000.0"/>
+    <kd  value="100.0"/>
     <material>Gazebo/Black</material>
   </gazebo>
+
+  <ros2_control name="MyRobotControl" type="system">
+    <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="wheel_front_left">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_front_right">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_rear_left">
+        <command_interface name="velocity"/>
+    </joint>
+    <joint name="wheel_rear_right">
+        <command_interface name="velocity"/>
+    </joint>
+</ros2_control>
+
 
 </robot>
