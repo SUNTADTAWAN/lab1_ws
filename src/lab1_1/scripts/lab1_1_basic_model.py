@@ -14,7 +14,7 @@ class BasicModel(Node):
         # Declare and get parameters
         self.declare_parameter('wheel_radius', 0.045)  # Wheel radius (m)
         self.declare_parameter('wheel_base', 0.2)  # Distance between front and rear axles (m)
-        self.declare_parameter('track_width', 0.2)  # Distance between left and right wheels (m)
+        self.declare_parameter('track_width', 0.14)  # Distance between left and right wheels (m)
 
         self.wheel_radius = self.get_parameter('wheel_radius').value
         self.wheel_base = self.get_parameter('wheel_base').value

@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
+###PP
 import rclpy
 from rclpy.node import Node
 import yaml
@@ -15,7 +17,7 @@ class AckermanPurePursuit(Node):
         super().__init__('ackerman_pure_pursuit')
 
         # Load path.yaml from package
-        package_name = 'lab1_2'  # Change this to match your package name
+        package_name = 'lab1_1'  # Change this to match your package name
         path_file = os.path.join(get_package_share_directory(package_name), 'config', 'path.yaml')
 
         if not os.path.exists(path_file):
@@ -33,12 +35,12 @@ class AckermanPurePursuit(Node):
         self.target_index = 0
 
         # Pure Pursuit Parameters
-        self.lookahead_distance = 25.0  # Increase to smooth turns
+        self.lookahead_distance = 50.0  # Increase to smooth turns
         self.wheel_base = 0.2  # Distance between front and rear wheels
 
         # PID gains for speed control (optional)
-        self.kp_speed = 3.0
-        self.max_speed = 3.0
+        self.kp_speed = 1.0
+        self.max_speed = 2.0
         self.min_speed = 0.5
 
         # Subscribers and Publishers

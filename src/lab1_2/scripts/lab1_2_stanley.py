@@ -37,7 +37,7 @@ class StanleyController(Node):
         self.current_index = 0
 
         # Stanley Parameters
-        self.stanley_k = 0.8         # 🔥 Increased gain for better turns
+        self.stanley_k = 0.95         # 🔥 Increased gain for better turns
         self.wheel_base = 0.2       # Distance between front and rear axles
         self.min_speed = 0.2         # Minimum speed (m/s)
         self.max_speed = 1.2         # Maximum speed (m/s)

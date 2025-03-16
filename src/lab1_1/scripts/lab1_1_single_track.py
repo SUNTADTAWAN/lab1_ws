@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-###single track
+##single track
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
@@ -16,7 +16,7 @@ class SingleTrack(Node):
 
         # Declare parameters
         self.declare_parameter('wheel_base', 0.2)     # Distance between front & rear axles
-        self.declare_parameter('track_width', 0.2)    # Distance between left and right wheels
+        self.declare_parameter('track_width', 0.14)    # Distance between left and right wheels
         self.declare_parameter('wheel_radius', 0.045) # Wheel radius
         self.declare_parameter('odom_frame_id', 'odom')
         self.declare_parameter('child_frame_id', 'base_link')
