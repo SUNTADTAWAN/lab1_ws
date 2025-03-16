@@ -87,22 +87,22 @@ For practical applications, **MPC or Stanley Controller** is preferred when stee
 - [Bicycle Model for Automated Driving](https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/BicycleModel.html)
 - [No Slip Condition Constraints in Kinematic Steering](https://www.mathworks.com/help/vdynblks/ref/kinematicsteering.html)
 - [Forward Kinematics and Odometry Calculation](https://ieeexplore.ieee.org/document/8574906)
-
+**  
 
 # Lab 1.2 Path Tracking Controller
 
 ## Analysis from the Table
 
-### PID Controller
+### **PID Controller**
 
 **Basic Equation:**  
-The PID Controller uses the equation  
+The PID Controller uses the equation:  
 $$ u = K_p \cdot e + K_i \cdot \int e \, dt + K_d \cdot \frac{d}{dt} e $$  
 
 **Tunable Parameters:**  
-- **Kp** affects the proportional response to yaw error.  
-- **Ki** helps reduce accumulated error, but excessive values may cause overshoot.  
-- **Kd** helps reduce oscillation, but improper tuning may slow response.  
+- $K_p$ affects the proportional response to yaw error.  
+- $K_i$ helps reduce accumulated error, but excessive values may cause overshoot.  
+- $K_d$ helps reduce oscillation, but improper tuning may slow response.  
 
 **Advantages:**  
 - Simple structure and adjustable for non-complex systems.  
@@ -111,24 +111,24 @@ $$ u = K_p \cdot e + K_i \cdot \int e \, dt + K_d \cdot \frac{d}{dt} e $$
 - Requires precise tuning in real environments and cannot consider future constraints.  
 
 **Effects on Straight Paths:**  
-- Proper tuning of **Kp, Ki, Kd** allows the vehicle to maintain direction effectively.  
+- Proper tuning of $K_p, K_i, K_d$ allows the vehicle to maintain direction effectively.  
 - Lower gain values help reduce oscillation while moving straight.  
 
 **Effects on Curves:**  
-- If **Kp** is too high, overshoot may occur when turning, causing oscillation.  
-- If **Kd** is too low, oscillation may not be dampened effectively.  
-- If **Ki** is too high, error accumulation (**integral windup**) may slow response.  
+- If $K_p$ is too high, overshoot may occur when turning, causing oscillation.  
+- If $K_d$ is too low, oscillation may not be dampened effectively.  
+- If $K_i$ is too high, error accumulation (integral windup) may slow response.  
 
 **Summary:**  
-- High **Kp** or **Kd** can cause angular velocity overshoot.  
+- High $K_p$ or $K_d$ can cause angular velocity overshoot.  
 - Low tuning may result in insufficient or slow turns.  
 
 ---
 
-### Stanley Controller
+### **Stanley Controller**
 
 **Basic Equation:**  
-Stanley Controller calculates the steer angle from heading error and cross track error using the equation  
+Stanley Controller calculates the steer angle from heading error and cross track error using the equation:  
 $$ \delta = k_{\text{heading}} \cdot (\theta_{\text{target}} - \theta_{\text{current}}) + \tan^{-1} \left( \frac{k \cdot cte_v}{v} \right) $$  
 
 **Tunable Parameters:**  
@@ -145,27 +145,27 @@ $$ \delta = k_{\text{heading}} \cdot (\theta_{\text{target}} - \theta_{\text{cur
 - Performance may decrease in highly complex paths.  
 
 **Effects on Straight Paths:**  
-- Proper **k** tuning ensures smooth tracking without oscillation.  
+- Proper $k$ tuning ensures smooth tracking without oscillation.  
 
 **Effects on Curves:**  
-- If **stanley_k** or **adaptive_k_factor** is too high, **over-correction** and oscillation may occur.  
+- If **stanley_k** or **adaptive_k_factor** is too high, over-correction and oscillation may occur.  
 - If **forward_speed** is too high, turns may be too slow to execute.  
 
 **Summary:**  
-- **k** and velocity affect angular velocity.  
+- $k$ and velocity affect angular velocity.  
 - High tuning may cause instability when turning.  
 - Low tuning may lead to slow, ineffective turns.  
 
 ---
 
-### Pure Pursuit Controller
+### **Pure Pursuit Controller**
 
 **Basic Equation:**  
-Pure Pursuit calculates curvature using  
+Pure Pursuit calculates curvature using:  
 $$ \gamma = \frac{2 \sin(\alpha)}{L_d} $$  
-and the steer angle from  
+and the steer angle from:  
 $$ \delta = \tan^{-1} (\gamma \cdot L) $$  
-where **𝛼** is the angle between the robot’s heading and the path at the **lookahead** point.  
+where **$\alpha$** is the angle between the robot’s heading and the path at the **lookahead** point.  
 
 **Tunable Parameters:**  
 - **lookahead_distance**: Distance used to select the target.  
@@ -189,7 +189,7 @@ where **𝛼** is the angle between the robot’s heading and the path at the **
 
 ---
 
-### Model Predictive Control (MPC)
+### **Model Predictive Control (MPC)**
 
 **Basic Equation:**  
 MPC uses the **Single Track Kinematic Model** to predict future states:  
@@ -230,6 +230,8 @@ $$ \theta_{k+1} = \theta_k + \frac{v}{L} \tan (\delta) \Delta t $$
 | **Stanley** | Often constant or reduced for sharp turns | $ \omega = \frac{v \tan(\delta)}{L} $ | High gain causes oscillation | Low gain causes delayed corrections |
 | **Pure Pursuit** | Often proportional to lookahead distance | $ \delta = \arctan(\frac{2 L \sin(\alpha)}{L_d}) $ | Large lookahead cuts corners, high speed leads to missed turns | Small lookahead oscillates, low speed moves too slow |
 | **PID** | Usually constant | $ \omega = K_p e + K_i \int e\,dt + K_d \frac{de}{dt} $ | High gains cause overshoot and oscillations | Low gains lead to sluggish corrections |
+
+---
 
 ## **Controller Selection for Ackermann Steering Model**
 
