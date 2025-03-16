@@ -40,14 +40,21 @@ Once the robot is spawned, run the kinematic models for comparison:
 
 #### 3.1 Run the **Double Track Model**
 ```bash
+ros2 run lab1_1 lab1_1_single_track.py
+```
+```bash
 ros2 run lab1_1 lab1_1_double_track.py
 ```
-
-#### 3.2 Run the **No Slip Model**
+```bash
+ros2 run lab1_1 lab1_1_lab1_1_yaw_rate.py
+```
+#### 3.2 Run the **No Slip Model or Basic Model**
 ```bash
 ros2 run lab1_1 lab1_1_no_slip_model.py
 ```
-
+```bash
+ros2 run lab1_1_basic_model.py
+```
 Each model runs independently, and you can analyze the differences in odometry accuracy and drift by comparing them.
 
 ![1](https://github.com/user-attachments/assets/6f51433a-3348-4441-bcd4-44b10491c82b)
