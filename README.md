@@ -11,6 +11,8 @@ cd lab1_ws
 
 ## Validation
 # Lab 1.1 Kinematics of Mobile Robot
+![1](https://github.com/user-attachments/assets/6f51433a-3348-4441-bcd4-44b10491c82b)
+
 
 ## Analysis of Results from the Table
 
@@ -93,6 +95,7 @@ For practical applications, **MPC or Stanley Controller** is preferred when stee
 
 # Lab 1.2 Path Tracking Controller
 
+![2](https://github.com/user-attachments/assets/53eaa1ac-9cd8-4abc-a4e8-5cfce8c33e48)
 ## Analysis from the Table
 
 ### PID Controller
