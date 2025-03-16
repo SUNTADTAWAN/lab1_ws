@@ -10,8 +10,6 @@ cd lab1_ws
 ```
 
 ## Validation 
-# Lab 1.1 Kinematics of Mobile Robot
-
 ## Analysis of Results from the Table
 
 ### 1) Basic Model + Yaw Rate
