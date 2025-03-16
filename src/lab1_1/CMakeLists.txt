@@ -38,12 +38,11 @@ install(PROGRAMS
   scripts/lab1_1_no_slip_model.py
   scripts/lab1_1_single_track.py
   scripts/lab1_1_yaw_rate.py
-  scripts/lab1_2_pid.py
-  scripts/lab1_2_pure_pursuit.py
-  scripts/lab1_2_stanley.py
   scripts/path_trackling.py
   scripts/plot_path.py
+  scripts/plot_auto_drive.py
   scripts/tf_publisher.py
+  scripts/map.py
 
 
   DESTINATION lib/${PROJECT_NAME}

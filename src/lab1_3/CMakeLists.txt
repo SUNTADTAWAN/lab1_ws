@@ -28,6 +28,8 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   scripts/dummy_script.py
+  scripts/lab1_3_ekf_node.py
+  scripts/lab1_3_gps_mulator.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

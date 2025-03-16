@@ -27,9 +27,10 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/dummy_script.py
-  scripts/pid.py
-  scripts/pure_pursuit.py
+  scripts/lab1_2_lmpc.py
+  scripts/lab1_2_pid.py
+  scripts/lab1_2_pure_pursuit.py
+  scripts/lab1_2_stanley.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
