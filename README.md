@@ -346,7 +346,43 @@ Suitable for stable navigation across varying speeds, considering Cross Track an
 For **Lab 1.2**, **PID** or **Pure Pursuit** is easy to implement, while **MPC** or **Stanley** provides higher accuracy and constraints consideration.
 
 # Lab 1.3 Extended Kalman Filter (EKF) Localization
+## **Running Lab 1.3**
+Before running, **ensure your ROS 2 workspace is built and sourced**:
+```bash
+colcon build
+source install/setup.bash
+```
 
+### **1 Start the Robot Simulation**
+First, launch the mobile robot:
+```bash
+ros2 launch lab1_1 spawn_robot.launch.py
+```
+
+### **2 Run the Kinematic Model**
+Run the **No Slip Model**, which improves accuracy in motion estimation:
+```bash
+ros2 run lab1_1 lab1_1_no_slip_model.py
+```
+
+### **3 Visualize the Path**
+Run the script to plot the robot's movement:
+```bash
+ros2 run lab1_1 plot_path.py
+```
+
+### **4 Start the GPS Data Simulator**
+To generate GPS-based mapping data, run:
+```bash
+ros2 run lab1_3 lab1_3_gps_mulator.py
+```
+
+### **5 Start the Extended Kalman Filter (EKF)**
+To enhance localization accuracy, run the EKF node:
+```bash
+ros2 run lab1_3 lab1_3_ekf_node.py
+```
+---
 ## **Analysis from the Table (Annkermann Steering Model)**
 
 ### **Linear Velocity ($v_x$)**
