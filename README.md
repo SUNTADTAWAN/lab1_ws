@@ -250,6 +250,76 @@ Suitable for stable navigation across varying speeds, considering Cross Track an
 ## **Controller Selection for Lab 1.2**
 For **Lab 1.2**, **PID** or **Pure Pursuit** is easy to implement, while **MPC** or **Stanley** provides higher accuracy and constraints consideration.
 
+# Lab 1.3 Extended Kalman Filter (EKF) Localization
+
+## **Analysis from the Table (Annkermann Steering Model)**
+
+### **Linear Velocity ($v_x$)**
+The linear velocity ($v_x$) is estimated using **GPS and odometry measurements**.  
+- GPS provides **absolute position updates** but is **low frequency and noisy**.  
+- Odometry gives **continuous velocity updates** but **accumulates drift** over time.  
+- **Kalman filter fuses both sources**, reducing noise while compensating for drift.  
+
+**Effects of Process & Measurement Noise:**
+- High **$Q$ (process noise)** → More uncertainty in $v_x$ → EKF trusts measurements more.  
+- High **$R_{odom}$ (odometry noise)** → Less reliance on odometry velocity updates.  
+- High **$R_{gps}$ (GPS noise)** → Less reliance on GPS updates, relying more on predicted velocity.  
+
+**Drift Analysis:**
+- If **only odometry** is used, drift accumulates exponentially over time.  
+- If **GPS is unreliable**, EKF may introduce fluctuations in $v_x$.  
+- **Combining both** maintains stable velocity estimates, reducing accumulated errors.
+
+---
+
+### **Angular Velocity ($\omega_z$)**
+The angular velocity ($\omega_z$) is estimated from **yaw rate in odometry** and **yaw updates from GPS**.  
+- Odometry measures $\omega_z$ continuously, **but noise accumulates**.  
+- GPS provides yaw measurements, **but with low update rates**.  
+- **EKF fuses both, maintaining accurate yaw tracking even with slip**.  
+
+**Effects of Process & Measurement Noise:**
+- High **$Q$ (process noise)** → EKF allows more uncertainty in yaw → Trusts sensor data more.  
+- High **$R_{odom}$ (odometry noise)** → EKF reduces reliance on yaw rate integration.  
+- High **$R_{gps}$ (GPS yaw noise)** → EKF relies more on odometry yaw updates.  
+
+**Drift Analysis:**
+- If **only odometry** is used, small errors in $\omega_z$ accumulate into large heading drift.  
+- If **GPS yaw updates are frequent**, EKF corrects the drift but may oscillate.  
+- **Combining both** allows stable heading estimation, even with momentary slip.  
+
+---
+
+## **Parameter Tuning for EKF Stability**
+
+| **Parameter** | **Effect on Localization** | **High Value Impact** | **Low Value Impact** |
+|--------------|--------------------------|-----------------------|----------------------|
+| **$Q$ (Process Noise Covariance)** | Model's belief in motion model | More uncertainty → More weight on measurements | Overconfidence in motion → Poor correction from sensors |
+| **$R_{odom}$ (Odometry Noise Covariance)** | Trust in odometry velocity & yaw rate | EKF ignores odometry → Higher reliance on GPS | Over-reliance on odometry → Accumulates drift quickly |
+| **$R_{gps}$ (GPS Noise Covariance)** | Trust in GPS position & yaw updates | EKF ignores GPS → Heading drift from odometry errors | Over-reliance on GPS → Jumps in estimated position |
+
+---
+
+## **Summary: Selecting the Best EKF Configuration**
+- **If GPS is reliable** → Reduce $R_{gps}$ to get better absolute positioning.  
+- **If odometry is noisy** → Increase $R_{odom}$ to reduce its effect on EKF.  
+- **If real-world slip exists** → Increase $Q$ slightly to allow more flexibility in prediction.  
+- **If GPS updates are slow** → Keep $R_{gps}$ moderate to avoid sudden jumps in pose estimation.  
+
+The **ideal tuning** is a balance between trusting odometry for smooth updates and using GPS to correct drift over time. 
+
+---
+
+## **Controller Selection for EKF-Based Localization**
+### **For Simple Applications**:
+- **PID Controller** (for small, controlled areas)
+- **Pure Pursuit** (for smooth path tracking but less reliable in slip conditions)
+
+### **For More Accurate Path Tracking**:
+- **Stanley Controller** (if lateral error is dominant)
+- **Model Predictive Control (MPC)** (if future constraints matter)
+
+**In Lab 1.3, MPC or Stanley Controller is ideal** due to its ability to handle GPS and odometry fusion effectively. 
 
 - **Pansiri**
 - **Tadtawan Chaloempornmongkol**
