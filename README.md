@@ -11,6 +11,45 @@ cd lab1_ws
 
 ## Validation
 # Lab 1.1 Kinematics of Mobile Robot
+## How to Run
+
+### 1. Build the Package
+Before running the simulation, ensure the package is built successfully.
+
+```bash
+colcon build
+```
+
+After the build is complete, source the setup:
+
+```bash
+source install/setup.bash
+```
+
+### 2. Launch the Simulation Environment
+Start the mobile robot simulation using the following command:
+
+```bash
+ros2 launch lab1_1 spawn_robot.launch.py
+```
+
+This command spawns the robot into the simulation environment.
+
+### 3. Run the Different Motion Models
+Once the robot is spawned, run the kinematic models for comparison:
+
+#### 3.1 Run the **Double Track Model**
+```bash
+ros2 run lab1_1 lab1_1_double_track.py
+```
+
+#### 3.2 Run the **No Slip Model**
+```bash
+ros2 run lab1_1 lab1_1_no_slip_model.py
+```
+
+Each model runs independently, and you can analyze the differences in odometry accuracy and drift by comparing them.
+
 ![1](https://github.com/user-attachments/assets/6f51433a-3348-4441-bcd4-44b10491c82b)
 
 
